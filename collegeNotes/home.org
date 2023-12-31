@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f8db065a-cb52-4fa0-9f57-1b0fdda11826
+:END:
+#+TITLE:Home
+
+* Casual
+** Links
+
+ [[/home/chilly/Code/wlancoms/lib/main.dart][  Dots App  ]]
+ [[/home/chilly/Code/Personal/Portfolio/index.html][  Open Portfolio  ]] 
+  
+* Course
+** Subjects
+All the course subjects for the fourth Semester, i.e Second year, second part.
+
+ [[id:09aa27b7-f197-4d03-bce6-6e01343dacae][  Applied Mathematics (AM)  ]]
+ [[id:3eaaf325-f584-48f5-b568-56dd280dafeb][  Numerical Methods (NM)  ]] 
+ [[id:834dbb79-f7bf-4dae-8a1d-5d52fd69582b][  Instrumentation 1 (I1)  ]]
+ [[id:d297aee1-8b67-424f-844e-6633d1990033][  Electrical Machines (EM)  ]]
+ [[id:868a4235-ade9-400c-b0b5-916779ddcddc][  Discrete Structure (DS)  ]]
+ [[id:585c9a24-0aa9-44d3-8941-55ac487626af][  Data Structure and Algorithms (DSA)  ]]
+ [[id:e4b6ee9a-a079-4311-9455-18df3b0b956e][  Microprocessors (M)  ]]
+
+** Labs

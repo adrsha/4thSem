@@ -1,0 +1,1437 @@
+2023-12-30 03:46:49.402 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 03:46:49.402 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 03:46:49.402 | DEBUG    | __main__:process_command:46 - Command received: MOV A, FFH
+2023-12-30 03:46:49.402 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'FFH')
+2023-12-30 03:46:49.402 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'FFH')
+2023-12-30 03:46:49.402 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'FFH']
+2023-12-30 03:46:49.403 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.403 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.403 | ERROR    | command_model:validate_args_type:43 - Got 'FFH' for parameter of type destination
+2023-12-30 03:46:49.403 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:46:49.403 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.403 | DEBUG    | __main__:process_command:46 - Command received: STA 80A2H
+2023-12-30 03:46:49.404 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A2H')
+2023-12-30 03:46:49.404 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A2H')
+2023-12-30 03:46:49.404 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A2H']
+2023-12-30 03:46:49.404 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:46:49.404 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:46:49.404 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:46:49.404 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.404 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A2' Command to the list
+2023-12-30 03:46:49.404 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.404 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A2', executing..
+2023-12-30 03:46:49.404 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A2
+2023-12-30 03:46:49.404 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A2',)
+2023-12-30 03:46:49.405 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:46:49.405 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.405 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.405 | DEBUG    | __main__:process_command:46 - Command received: MOV A, A2H
+2023-12-30 03:46:49.405 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'A2H')
+2023-12-30 03:46:49.405 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'A2H')
+2023-12-30 03:46:49.405 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'A2H']
+2023-12-30 03:46:49.405 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.405 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.405 | ERROR    | command_model:validate_args_type:43 - Got 'A2H' for parameter of type destination
+2023-12-30 03:46:49.406 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:46:49.406 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.406 | DEBUG    | __main__:process_command:46 - Command received: STA 80A3H
+2023-12-30 03:46:49.406 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A3H')
+2023-12-30 03:46:49.406 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A3H')
+2023-12-30 03:46:49.406 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A3H']
+2023-12-30 03:46:49.406 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:46:49.406 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:46:49.406 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:46:49.407 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.407 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A3' Command to the list
+2023-12-30 03:46:49.407 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.407 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A3', executing..
+2023-12-30 03:46:49.407 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A3
+2023-12-30 03:46:49.407 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A3',)
+2023-12-30 03:46:49.407 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:46:49.407 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.407 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.408 | DEBUG    | __main__:process_command:46 - Command received: MOV A, 00H
+2023-12-30 03:46:49.408 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', '00H')
+2023-12-30 03:46:49.408 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', '00H')
+2023-12-30 03:46:49.408 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', '00H']
+2023-12-30 03:46:49.408 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.408 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.409 | ERROR    | command_model:validate_args_type:43 - Got '00H' for parameter of type destination
+2023-12-30 03:46:49.409 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:46:49.409 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.409 | DEBUG    | __main__:process_command:46 - Command received: STA 80A4H
+2023-12-30 03:46:49.409 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A4H')
+2023-12-30 03:46:49.409 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A4H')
+2023-12-30 03:46:49.410 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A4H']
+2023-12-30 03:46:49.410 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:46:49.410 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A4H''
+2023-12-30 03:46:49.410 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:46:49.410 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.410 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A4' Command to the list
+2023-12-30 03:46:49.410 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.410 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A4', executing..
+2023-12-30 03:46:49.411 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A4
+2023-12-30 03:46:49.411 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A4',)
+2023-12-30 03:46:49.411 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:46:49.411 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A4' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.411 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.411 | DEBUG    | __main__:process_command:46 - Command received: MOV A, 26H
+2023-12-30 03:46:49.411 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', '26H')
+2023-12-30 03:46:49.412 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', '26H')
+2023-12-30 03:46:49.412 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', '26H']
+2023-12-30 03:46:49.412 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.412 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.412 | ERROR    | command_model:validate_args_type:43 - Got '26H' for parameter of type destination
+2023-12-30 03:46:49.412 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:46:49.412 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.412 | DEBUG    | __main__:process_command:46 - Command received: STA 80A5H
+2023-12-30 03:46:49.412 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A5H')
+2023-12-30 03:46:49.412 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A5H')
+2023-12-30 03:46:49.413 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A5H']
+2023-12-30 03:46:49.413 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:46:49.413 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A5H''
+2023-12-30 03:46:49.413 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:46:49.413 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.413 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A5' Command to the list
+2023-12-30 03:46:49.413 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.413 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A5', executing..
+2023-12-30 03:46:49.413 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A5
+2023-12-30 03:46:49.413 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A5',)
+2023-12-30 03:46:49.413 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:46:49.413 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A5' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.414 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.414 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 03:46:49.414 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A2H
+2023-12-30 03:46:49.414 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A2H')
+2023-12-30 03:46:49.414 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A2H')
+2023-12-30 03:46:49.414 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A2H']
+2023-12-30 03:46:49.414 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:46:49.414 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:46:49.415 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:46:49.415 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.415 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A2' Command to the list
+2023-12-30 03:46:49.415 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.415 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A2', executing..
+2023-12-30 03:46:49.415 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A2
+2023-12-30 03:46:49.415 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A2',)
+2023-12-30 03:46:49.415 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x00
+2023-12-30 03:46:49.415 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.415 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.416 | DEBUG    | __main__:process_command:46 - Command received: MOV  D, A
+2023-12-30 03:46:49.416 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'D', 'A')
+2023-12-30 03:46:49.416 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'D', 'A')
+2023-12-30 03:46:49.416 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'D', 'A']
+2023-12-30 03:46:49.416 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.416 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.416 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.416 | DEBUG    | interpreter:add_command:109 - Added 'MOV D A' Command to the list
+2023-12-30 03:46:49.416 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.416 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV D A', executing..
+2023-12-30 03:46:49.416 | DEBUG    | command_model:eval:53 - Evaluating command: MOV D A
+2023-12-30 03:46:49.416 | DEBUG    | command_model:move:73 - MOV: ('D', 'A')
+2023-12-30 03:46:49.416 | DEBUG    | command_model:move:77 - MOVED: D[0x00] <- A
+2023-12-30 03:46:49.417 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV D A' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.417 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.417 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A3H
+2023-12-30 03:46:49.417 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A3H')
+2023-12-30 03:46:49.417 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A3H')
+2023-12-30 03:46:49.417 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A3H']
+2023-12-30 03:46:49.417 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:46:49.417 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:46:49.417 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:46:49.417 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.418 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A3' Command to the list
+2023-12-30 03:46:49.418 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.418 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A3', executing..
+2023-12-30 03:46:49.418 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A3
+2023-12-30 03:46:49.418 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A3',)
+2023-12-30 03:46:49.418 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x00
+2023-12-30 03:46:49.418 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.418 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.418 | DEBUG    | __main__:process_command:46 - Command received: MOV  E, A
+2023-12-30 03:46:49.419 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'E', 'A')
+2023-12-30 03:46:49.419 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'E', 'A')
+2023-12-30 03:46:49.419 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'E', 'A']
+2023-12-30 03:46:49.419 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.419 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.419 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.419 | DEBUG    | interpreter:add_command:109 - Added 'MOV E A' Command to the list
+2023-12-30 03:46:49.419 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.419 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV E A', executing..
+2023-12-30 03:46:49.419 | DEBUG    | command_model:eval:53 - Evaluating command: MOV E A
+2023-12-30 03:46:49.419 | DEBUG    | command_model:move:73 - MOV: ('E', 'A')
+2023-12-30 03:46:49.419 | DEBUG    | command_model:move:77 - MOVED: E[0x00] <- A
+2023-12-30 03:46:49.420 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV E A' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.420 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.420 | DEBUG    | __main__:process_command:46 - Command received: INX  D
+2023-12-30 03:46:49.420 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('INX', 'D')
+2023-12-30 03:46:49.420 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('INX', 'D')
+2023-12-30 03:46:49.420 | DEBUG    | converter:process_comments:80 - No comments found: ['INX', 'D']
+2023-12-30 03:46:49.420 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'INX'
+2023-12-30 03:46:49.420 | DEBUG    | __main__:cmd_preprocessor:98 - Command INX found.
+2023-12-30 03:46:49.420 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.421 | DEBUG    | interpreter:add_command:109 - Added 'INX D' Command to the list
+2023-12-30 03:46:49.421 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.421 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'INX D', executing..
+2023-12-30 03:46:49.421 | DEBUG    | command_model:eval:53 - Evaluating command: INX D
+2023-12-30 03:46:49.421 | DEBUG    | command_model:increment_extended_register:357 - INX: ('D',)
+2023-12-30 03:46:49.421 | DEBUG    | command_model:increment_extended_register:361 - Got mem addr stored by register pair DE: 0x0000
+2023-12-30 03:46:49.421 | DEBUG    | state_model:set_register_pair_value:91 - Pair DE Loaded: 0x00, 0x01
+2023-12-30 03:46:49.421 | DEBUG    | command_model:increment_extended_register:369 - D -> 0x00 | E -> 0x01
+2023-12-30 03:46:49.421 | DEBUG    | interpreter:evaluate_command:130 - Command 'INX D' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.421 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x0000
+2023-12-30 03:46:49.422 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A3H
+2023-12-30 03:46:49.422 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A3H')
+2023-12-30 03:46:49.422 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A3H')
+2023-12-30 03:46:49.422 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A3H']
+2023-12-30 03:46:49.422 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:46:49.422 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:46:49.422 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:46:49.422 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.422 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A3' Command to the list
+2023-12-30 03:46:49.422 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.422 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A3', executing..
+2023-12-30 03:46:49.422 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A3
+2023-12-30 03:46:49.423 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A3')
+2023-12-30 03:46:49.423 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a3
+2023-12-30 03:46:49.423 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa3
+2023-12-30 03:46:49.423 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.423 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a3
+2023-12-30 03:46:49.423 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, E
+2023-12-30 03:46:49.423 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'E')
+2023-12-30 03:46:49.423 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'E')
+2023-12-30 03:46:49.423 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'E']
+2023-12-30 03:46:49.423 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.424 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.424 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.424 | DEBUG    | interpreter:add_command:109 - Added 'MOV M E' Command to the list
+2023-12-30 03:46:49.424 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.424 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M E', executing..
+2023-12-30 03:46:49.424 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M E
+2023-12-30 03:46:49.424 | DEBUG    | command_model:move:73 - MOV: ('M', 'E')
+2023-12-30 03:46:49.424 | DEBUG    | command_model:move:77 - MOVED: M[0x01] <- E
+2023-12-30 03:46:49.424 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M E' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.424 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x01 from 0x80a3
+2023-12-30 03:46:49.425 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A2H
+2023-12-30 03:46:49.425 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A2H')
+2023-12-30 03:46:49.425 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A2H')
+2023-12-30 03:46:49.425 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A2H']
+2023-12-30 03:46:49.425 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:46:49.425 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:46:49.425 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:46:49.425 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.425 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A2' Command to the list
+2023-12-30 03:46:49.425 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.425 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A2', executing..
+2023-12-30 03:46:49.425 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A2
+2023-12-30 03:46:49.425 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A2')
+2023-12-30 03:46:49.426 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 03:46:49.426 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa2
+2023-12-30 03:46:49.426 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.426 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 03:46:49.426 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, D
+2023-12-30 03:46:49.426 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'D')
+2023-12-30 03:46:49.426 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'D')
+2023-12-30 03:46:49.426 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'D']
+2023-12-30 03:46:49.426 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:46:49.427 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:46:49.427 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.427 | DEBUG    | interpreter:add_command:109 - Added 'MOV M D' Command to the list
+2023-12-30 03:46:49.427 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.427 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M D', executing..
+2023-12-30 03:46:49.427 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M D
+2023-12-30 03:46:49.427 | DEBUG    | command_model:move:73 - MOV: ('M', 'D')
+2023-12-30 03:46:49.427 | DEBUG    | command_model:move:77 - MOVED: M[0x00] <- D
+2023-12-30 03:46:49.427 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M D' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.427 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 03:46:49.427 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 03:46:49.428 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 03:46:49.428 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 03:46:49.428 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 03:46:49.428 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 03:46:49.428 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 03:46:49.428 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:46:49.428 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 03:46:49.428 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:46:49.428 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 03:46:49.428 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 03:46:49.428 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 03:46:49.428 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 03:46:49.429 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 03:49:00.533 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 03:49:00.533 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 03:49:00.533 | DEBUG    | __main__:process_command:46 - Command received: MOV A, FFH
+2023-12-30 03:49:00.534 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'FFH')
+2023-12-30 03:49:00.534 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'FFH')
+2023-12-30 03:49:00.534 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'FFH']
+2023-12-30 03:49:00.534 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.534 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.534 | ERROR    | command_model:validate_args_type:43 - Got 'FFH' for parameter of type destination
+2023-12-30 03:49:00.534 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:49:00.534 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 03:49:00.535 | DEBUG    | __main__:process_command:46 - Command received: STA 80A2H
+2023-12-30 03:49:00.535 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A2H')
+2023-12-30 03:49:00.535 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A2H')
+2023-12-30 03:49:00.535 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A2H']
+2023-12-30 03:49:00.535 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:00.535 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:00.535 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:00.535 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.535 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A2' Command to the list
+2023-12-30 03:49:00.535 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.536 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A2', executing..
+2023-12-30 03:49:00.536 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A2
+2023-12-30 03:49:00.536 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A2',)
+2023-12-30 03:49:00.536 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:00.536 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.536 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.536 | DEBUG    | __main__:process_command:46 - Command received: MOV A, A2H
+2023-12-30 03:49:00.536 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'A2H')
+2023-12-30 03:49:00.536 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'A2H')
+2023-12-30 03:49:00.537 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'A2H']
+2023-12-30 03:49:00.537 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.537 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.537 | ERROR    | command_model:validate_args_type:43 - Got 'A2H' for parameter of type destination
+2023-12-30 03:49:00.537 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:49:00.537 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.538 | DEBUG    | __main__:process_command:46 - Command received: STA 80A3H
+2023-12-30 03:49:00.538 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A3H')
+2023-12-30 03:49:00.538 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A3H')
+2023-12-30 03:49:00.538 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A3H']
+2023-12-30 03:49:00.538 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:00.538 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:00.538 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:00.538 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.538 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A3' Command to the list
+2023-12-30 03:49:00.538 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.539 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A3', executing..
+2023-12-30 03:49:00.539 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A3
+2023-12-30 03:49:00.539 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A3',)
+2023-12-30 03:49:00.539 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:00.539 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.539 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.539 | DEBUG    | __main__:process_command:46 - Command received: MOV A, 00H
+2023-12-30 03:49:00.540 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', '00H')
+2023-12-30 03:49:00.540 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', '00H')
+2023-12-30 03:49:00.540 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', '00H']
+2023-12-30 03:49:00.540 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.540 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.540 | ERROR    | command_model:validate_args_type:43 - Got '00H' for parameter of type destination
+2023-12-30 03:49:00.540 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:49:00.540 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.540 | DEBUG    | __main__:process_command:46 - Command received: STA 80A4H
+2023-12-30 03:49:00.540 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A4H')
+2023-12-30 03:49:00.541 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A4H')
+2023-12-30 03:49:00.541 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A4H']
+2023-12-30 03:49:00.541 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:00.541 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A4H''
+2023-12-30 03:49:00.541 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:00.541 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.541 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A4' Command to the list
+2023-12-30 03:49:00.541 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.541 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A4', executing..
+2023-12-30 03:49:00.541 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A4
+2023-12-30 03:49:00.541 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A4',)
+2023-12-30 03:49:00.541 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:00.541 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A4' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.542 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.542 | DEBUG    | __main__:process_command:46 - Command received: MOV A, 26H
+2023-12-30 03:49:00.542 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', '26H')
+2023-12-30 03:49:00.542 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', '26H')
+2023-12-30 03:49:00.542 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', '26H']
+2023-12-30 03:49:00.542 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.542 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.542 | ERROR    | command_model:validate_args_type:43 - Got '26H' for parameter of type destination
+2023-12-30 03:49:00.542 | DEBUG    | command_model:validate:24 - Validation Complete (True, False)
+2023-12-30 03:49:00.542 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.543 | DEBUG    | __main__:process_command:46 - Command received: STA 80A5H
+2023-12-30 03:49:00.543 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A5H')
+2023-12-30 03:49:00.543 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A5H')
+2023-12-30 03:49:00.543 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A5H']
+2023-12-30 03:49:00.543 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:00.543 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A5H''
+2023-12-30 03:49:00.543 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:00.543 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.543 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A5' Command to the list
+2023-12-30 03:49:00.543 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.543 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A5', executing..
+2023-12-30 03:49:00.544 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A5
+2023-12-30 03:49:00.544 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A5',)
+2023-12-30 03:49:00.544 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:00.544 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A5' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.544 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.544 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 03:49:00.544 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A2H
+2023-12-30 03:49:00.544 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A2H')
+2023-12-30 03:49:00.544 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A2H')
+2023-12-30 03:49:00.545 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A2H']
+2023-12-30 03:49:00.545 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:49:00.545 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:00.545 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:49:00.545 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.545 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A2' Command to the list
+2023-12-30 03:49:00.545 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.545 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A2', executing..
+2023-12-30 03:49:00.545 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A2
+2023-12-30 03:49:00.545 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A2',)
+2023-12-30 03:49:00.545 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x03
+2023-12-30 03:49:00.545 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.545 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.546 | DEBUG    | __main__:process_command:46 - Command received: MOV  D, A
+2023-12-30 03:49:00.546 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'D', 'A')
+2023-12-30 03:49:00.546 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'D', 'A')
+2023-12-30 03:49:00.546 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'D', 'A']
+2023-12-30 03:49:00.546 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.546 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.546 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.546 | DEBUG    | interpreter:add_command:109 - Added 'MOV D A' Command to the list
+2023-12-30 03:49:00.546 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.546 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV D A', executing..
+2023-12-30 03:49:00.546 | DEBUG    | command_model:eval:53 - Evaluating command: MOV D A
+2023-12-30 03:49:00.547 | DEBUG    | command_model:move:73 - MOV: ('D', 'A')
+2023-12-30 03:49:00.547 | DEBUG    | command_model:move:77 - MOVED: D[0x03] <- A
+2023-12-30 03:49:00.547 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV D A' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.547 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.547 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A3H
+2023-12-30 03:49:00.547 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A3H')
+2023-12-30 03:49:00.547 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A3H')
+2023-12-30 03:49:00.547 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A3H']
+2023-12-30 03:49:00.547 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:49:00.547 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:00.547 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:49:00.548 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.548 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A3' Command to the list
+2023-12-30 03:49:00.548 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.548 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A3', executing..
+2023-12-30 03:49:00.548 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A3
+2023-12-30 03:49:00.548 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A3',)
+2023-12-30 03:49:00.548 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x03
+2023-12-30 03:49:00.548 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.548 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.548 | DEBUG    | __main__:process_command:46 - Command received: MOV  E, A
+2023-12-30 03:49:00.549 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'E', 'A')
+2023-12-30 03:49:00.549 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'E', 'A')
+2023-12-30 03:49:00.549 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'E', 'A']
+2023-12-30 03:49:00.549 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.549 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.549 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.549 | DEBUG    | interpreter:add_command:109 - Added 'MOV E A' Command to the list
+2023-12-30 03:49:00.549 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.549 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV E A', executing..
+2023-12-30 03:49:00.549 | DEBUG    | command_model:eval:53 - Evaluating command: MOV E A
+2023-12-30 03:49:00.549 | DEBUG    | command_model:move:73 - MOV: ('E', 'A')
+2023-12-30 03:49:00.549 | DEBUG    | command_model:move:77 - MOVED: E[0x03] <- A
+2023-12-30 03:49:00.549 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV E A' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.549 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.550 | DEBUG    | __main__:process_command:46 - Command received: INX  D
+2023-12-30 03:49:00.550 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('INX', 'D')
+2023-12-30 03:49:00.550 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('INX', 'D')
+2023-12-30 03:49:00.550 | DEBUG    | converter:process_comments:80 - No comments found: ['INX', 'D']
+2023-12-30 03:49:00.550 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'INX'
+2023-12-30 03:49:00.550 | DEBUG    | __main__:cmd_preprocessor:98 - Command INX found.
+2023-12-30 03:49:00.550 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.550 | DEBUG    | interpreter:add_command:109 - Added 'INX D' Command to the list
+2023-12-30 03:49:00.550 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.550 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'INX D', executing..
+2023-12-30 03:49:00.551 | DEBUG    | command_model:eval:53 - Evaluating command: INX D
+2023-12-30 03:49:00.551 | DEBUG    | command_model:increment_extended_register:357 - INX: ('D',)
+2023-12-30 03:49:00.551 | DEBUG    | command_model:increment_extended_register:361 - Got mem addr stored by register pair DE: 0x0303
+2023-12-30 03:49:00.551 | DEBUG    | state_model:set_register_pair_value:91 - Pair DE Loaded: 0x03, 0x04
+2023-12-30 03:49:00.551 | DEBUG    | command_model:increment_extended_register:369 - D -> 0x03 | E -> 0x04
+2023-12-30 03:49:00.551 | DEBUG    | interpreter:evaluate_command:130 - Command 'INX D' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.551 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.551 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A3H
+2023-12-30 03:49:00.551 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A3H')
+2023-12-30 03:49:00.551 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A3H')
+2023-12-30 03:49:00.551 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A3H']
+2023-12-30 03:49:00.552 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:49:00.552 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:00.552 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:49:00.552 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.552 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A3' Command to the list
+2023-12-30 03:49:00.552 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.552 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A3', executing..
+2023-12-30 03:49:00.552 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A3
+2023-12-30 03:49:00.552 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A3')
+2023-12-30 03:49:00.552 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a3
+2023-12-30 03:49:00.552 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa3
+2023-12-30 03:49:00.552 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.552 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a3
+2023-12-30 03:49:00.553 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, E
+2023-12-30 03:49:00.553 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'E')
+2023-12-30 03:49:00.553 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'E')
+2023-12-30 03:49:00.553 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'E']
+2023-12-30 03:49:00.553 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.553 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.553 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.553 | DEBUG    | interpreter:add_command:109 - Added 'MOV M E' Command to the list
+2023-12-30 03:49:00.553 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.553 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M E', executing..
+2023-12-30 03:49:00.553 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M E
+2023-12-30 03:49:00.554 | DEBUG    | command_model:move:73 - MOV: ('M', 'E')
+2023-12-30 03:49:00.554 | DEBUG    | command_model:move:77 - MOVED: M[0x04] <- E
+2023-12-30 03:49:00.554 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M E' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.554 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x04 from 0x80a3
+2023-12-30 03:49:00.554 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A2H
+2023-12-30 03:49:00.554 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A2H')
+2023-12-30 03:49:00.554 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A2H')
+2023-12-30 03:49:00.554 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A2H']
+2023-12-30 03:49:00.554 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:49:00.554 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:00.554 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:49:00.555 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.555 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A2' Command to the list
+2023-12-30 03:49:00.555 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.555 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A2', executing..
+2023-12-30 03:49:00.555 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A2
+2023-12-30 03:49:00.555 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A2')
+2023-12-30 03:49:00.555 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.555 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa2
+2023-12-30 03:49:00.555 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.555 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.555 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, D
+2023-12-30 03:49:00.556 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'D')
+2023-12-30 03:49:00.556 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'D')
+2023-12-30 03:49:00.556 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'D']
+2023-12-30 03:49:00.556 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:00.556 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:00.556 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.556 | DEBUG    | interpreter:add_command:109 - Added 'MOV M D' Command to the list
+2023-12-30 03:49:00.556 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.556 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M D', executing..
+2023-12-30 03:49:00.556 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M D
+2023-12-30 03:49:00.556 | DEBUG    | command_model:move:73 - MOV: ('M', 'D')
+2023-12-30 03:49:00.556 | DEBUG    | command_model:move:77 - MOVED: M[0x03] <- D
+2023-12-30 03:49:00.556 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M D' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.557 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:00.557 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 03:49:00.557 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 03:49:00.557 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 03:49:00.557 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 03:49:00.557 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 03:49:00.557 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 03:49:00.557 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:00.557 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 03:49:00.557 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:00.557 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 03:49:00.558 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 03:49:00.558 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 03:49:00.558 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 03:49:00.558 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:56.804 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 03:49:56.804 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 03:49:56.805 | DEBUG    | __main__:process_command:46 - Command received: MVI A, FFH
+2023-12-30 03:49:56.805 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', 'FFH')
+2023-12-30 03:49:56.805 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', 'FFH')
+2023-12-30 03:49:56.805 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', 'FFH']
+2023-12-30 03:49:56.805 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 03:49:56.805 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='FFH''
+2023-12-30 03:49:56.805 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 03:49:56.805 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.805 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0xFF' Command to the list
+2023-12-30 03:49:56.806 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.806 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0xFF', executing..
+2023-12-30 03:49:56.806 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0xFF
+2023-12-30 03:49:56.806 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0xFF')
+2023-12-30 03:49:56.806 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0xff'
+2023-12-30 03:49:56.806 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0xFF' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.806 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x03 from 0x80a2
+2023-12-30 03:49:56.806 | DEBUG    | __main__:process_command:46 - Command received: STA 80A2H
+2023-12-30 03:49:56.806 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A2H')
+2023-12-30 03:49:56.807 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A2H')
+2023-12-30 03:49:56.807 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A2H']
+2023-12-30 03:49:56.807 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:56.807 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:56.807 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:56.807 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.807 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A2' Command to the list
+2023-12-30 03:49:56.807 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.807 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A2', executing..
+2023-12-30 03:49:56.807 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A2
+2023-12-30 03:49:56.807 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A2',)
+2023-12-30 03:49:56.807 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:56.807 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.808 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.808 | DEBUG    | __main__:process_command:46 - Command received: MVI A, A2H
+2023-12-30 03:49:56.808 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', 'A2H')
+2023-12-30 03:49:56.808 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', 'A2H')
+2023-12-30 03:49:56.808 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', 'A2H']
+2023-12-30 03:49:56.808 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 03:49:56.808 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='A2H''
+2023-12-30 03:49:56.808 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 03:49:56.808 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.808 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0xA2' Command to the list
+2023-12-30 03:49:56.808 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.809 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0xA2', executing..
+2023-12-30 03:49:56.809 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0xA2
+2023-12-30 03:49:56.809 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0xA2')
+2023-12-30 03:49:56.809 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0xa2'
+2023-12-30 03:49:56.809 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0xA2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.809 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.809 | DEBUG    | __main__:process_command:46 - Command received: STA 80A3H
+2023-12-30 03:49:56.809 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A3H')
+2023-12-30 03:49:56.809 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A3H')
+2023-12-30 03:49:56.809 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A3H']
+2023-12-30 03:49:56.809 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:56.810 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:56.810 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:56.810 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.810 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A3' Command to the list
+2023-12-30 03:49:56.810 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.810 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A3', executing..
+2023-12-30 03:49:56.810 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A3
+2023-12-30 03:49:56.810 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A3',)
+2023-12-30 03:49:56.810 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:56.810 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.810 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.811 | DEBUG    | __main__:process_command:46 - Command received: MVI A, 00H
+2023-12-30 03:49:56.811 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', '00H')
+2023-12-30 03:49:56.811 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', '00H')
+2023-12-30 03:49:56.811 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', '00H']
+2023-12-30 03:49:56.811 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 03:49:56.811 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='00H''
+2023-12-30 03:49:56.811 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 03:49:56.811 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.811 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0x00' Command to the list
+2023-12-30 03:49:56.811 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.811 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0x00', executing..
+2023-12-30 03:49:56.811 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0x00
+2023-12-30 03:49:56.811 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0x00')
+2023-12-30 03:49:56.812 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0x00'
+2023-12-30 03:49:56.812 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0x00' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.812 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.812 | DEBUG    | __main__:process_command:46 - Command received: STA 80A4H
+2023-12-30 03:49:56.812 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A4H')
+2023-12-30 03:49:56.812 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A4H')
+2023-12-30 03:49:56.812 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A4H']
+2023-12-30 03:49:56.812 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:56.812 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A4H''
+2023-12-30 03:49:56.812 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:56.812 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.813 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A4' Command to the list
+2023-12-30 03:49:56.813 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.813 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A4', executing..
+2023-12-30 03:49:56.813 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A4
+2023-12-30 03:49:56.813 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A4',)
+2023-12-30 03:49:56.813 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:56.813 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A4' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.813 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.813 | DEBUG    | __main__:process_command:46 - Command received: MVI A, 26H
+2023-12-30 03:49:56.813 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', '26H')
+2023-12-30 03:49:56.813 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', '26H')
+2023-12-30 03:49:56.813 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', '26H']
+2023-12-30 03:49:56.814 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 03:49:56.814 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='26H''
+2023-12-30 03:49:56.814 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 03:49:56.814 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.814 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0x26' Command to the list
+2023-12-30 03:49:56.814 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.814 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0x26', executing..
+2023-12-30 03:49:56.814 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0x26
+2023-12-30 03:49:56.814 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0x26')
+2023-12-30 03:49:56.814 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0x26'
+2023-12-30 03:49:56.814 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0x26' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.814 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.815 | DEBUG    | __main__:process_command:46 - Command received: STA 80A5H
+2023-12-30 03:49:56.815 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A5H')
+2023-12-30 03:49:56.815 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A5H')
+2023-12-30 03:49:56.815 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A5H']
+2023-12-30 03:49:56.815 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:49:56.815 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A5H''
+2023-12-30 03:49:56.815 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:49:56.815 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.815 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A5' Command to the list
+2023-12-30 03:49:56.815 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.815 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A5', executing..
+2023-12-30 03:49:56.815 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A5
+2023-12-30 03:49:56.816 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A5',)
+2023-12-30 03:49:56.816 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:49:56.816 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A5' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.816 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.816 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 03:49:56.816 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A2H
+2023-12-30 03:49:56.816 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A2H')
+2023-12-30 03:49:56.816 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A2H')
+2023-12-30 03:49:56.816 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A2H']
+2023-12-30 03:49:56.817 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:49:56.817 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:56.817 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:49:56.817 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.817 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A2' Command to the list
+2023-12-30 03:49:56.817 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.817 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A2', executing..
+2023-12-30 03:49:56.817 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A2
+2023-12-30 03:49:56.817 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A2',)
+2023-12-30 03:49:56.817 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0xff
+2023-12-30 03:49:56.817 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.817 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.818 | DEBUG    | __main__:process_command:46 - Command received: MOV  D, A
+2023-12-30 03:49:56.818 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'D', 'A')
+2023-12-30 03:49:56.818 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'D', 'A')
+2023-12-30 03:49:56.818 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'D', 'A']
+2023-12-30 03:49:56.818 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:56.818 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:56.818 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.818 | DEBUG    | interpreter:add_command:109 - Added 'MOV D A' Command to the list
+2023-12-30 03:49:56.818 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.818 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV D A', executing..
+2023-12-30 03:49:56.818 | DEBUG    | command_model:eval:53 - Evaluating command: MOV D A
+2023-12-30 03:49:56.818 | DEBUG    | command_model:move:73 - MOV: ('D', 'A')
+2023-12-30 03:49:56.818 | DEBUG    | command_model:move:77 - MOVED: D[0xff] <- A
+2023-12-30 03:49:56.818 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV D A' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.819 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.819 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A3H
+2023-12-30 03:49:56.819 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A3H')
+2023-12-30 03:49:56.819 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A3H')
+2023-12-30 03:49:56.819 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A3H']
+2023-12-30 03:49:56.819 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:49:56.819 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:56.819 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:49:56.819 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.819 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A3' Command to the list
+2023-12-30 03:49:56.819 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.820 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A3', executing..
+2023-12-30 03:49:56.820 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A3
+2023-12-30 03:49:56.820 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A3',)
+2023-12-30 03:49:56.820 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0xa2
+2023-12-30 03:49:56.820 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.820 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.820 | DEBUG    | __main__:process_command:46 - Command received: MOV  E, A
+2023-12-30 03:49:56.820 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'E', 'A')
+2023-12-30 03:49:56.820 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'E', 'A')
+2023-12-30 03:49:56.820 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'E', 'A']
+2023-12-30 03:49:56.820 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:56.821 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:56.821 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.821 | DEBUG    | interpreter:add_command:109 - Added 'MOV E A' Command to the list
+2023-12-30 03:49:56.821 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.821 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV E A', executing..
+2023-12-30 03:49:56.821 | DEBUG    | command_model:eval:53 - Evaluating command: MOV E A
+2023-12-30 03:49:56.821 | DEBUG    | command_model:move:73 - MOV: ('E', 'A')
+2023-12-30 03:49:56.821 | DEBUG    | command_model:move:77 - MOVED: E[0xa2] <- A
+2023-12-30 03:49:56.821 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV E A' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.822 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.822 | DEBUG    | __main__:process_command:46 - Command received: INX  D
+2023-12-30 03:49:56.822 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('INX', 'D')
+2023-12-30 03:49:56.822 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('INX', 'D')
+2023-12-30 03:49:56.822 | DEBUG    | converter:process_comments:80 - No comments found: ['INX', 'D']
+2023-12-30 03:49:56.822 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'INX'
+2023-12-30 03:49:56.822 | DEBUG    | __main__:cmd_preprocessor:98 - Command INX found.
+2023-12-30 03:49:56.823 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.823 | DEBUG    | interpreter:add_command:109 - Added 'INX D' Command to the list
+2023-12-30 03:49:56.823 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.823 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'INX D', executing..
+2023-12-30 03:49:56.823 | DEBUG    | command_model:eval:53 - Evaluating command: INX D
+2023-12-30 03:49:56.823 | DEBUG    | command_model:increment_extended_register:357 - INX: ('D',)
+2023-12-30 03:49:56.823 | DEBUG    | command_model:increment_extended_register:361 - Got mem addr stored by register pair DE: 0xffa2
+2023-12-30 03:49:56.823 | DEBUG    | state_model:set_register_pair_value:91 - Pair DE Loaded: 0xff, 0xa3
+2023-12-30 03:49:56.823 | DEBUG    | command_model:increment_extended_register:369 - D -> 0xff | E -> 0xa3
+2023-12-30 03:49:56.824 | DEBUG    | interpreter:evaluate_command:130 - Command 'INX D' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.824 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.824 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A3H
+2023-12-30 03:49:56.824 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A3H')
+2023-12-30 03:49:56.824 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A3H')
+2023-12-30 03:49:56.824 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A3H']
+2023-12-30 03:49:56.824 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:49:56.825 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 03:49:56.825 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:49:56.825 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.825 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A3' Command to the list
+2023-12-30 03:49:56.825 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.825 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A3', executing..
+2023-12-30 03:49:56.825 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A3
+2023-12-30 03:49:56.825 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A3')
+2023-12-30 03:49:56.825 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xa2 from 0x80a3
+2023-12-30 03:49:56.825 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa3
+2023-12-30 03:49:56.826 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.826 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xa2 from 0x80a3
+2023-12-30 03:49:56.826 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, E
+2023-12-30 03:49:56.826 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'E')
+2023-12-30 03:49:56.826 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'E')
+2023-12-30 03:49:56.826 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'E']
+2023-12-30 03:49:56.826 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:56.826 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:56.827 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.827 | DEBUG    | interpreter:add_command:109 - Added 'MOV M E' Command to the list
+2023-12-30 03:49:56.827 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.827 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M E', executing..
+2023-12-30 03:49:56.827 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M E
+2023-12-30 03:49:56.827 | DEBUG    | command_model:move:73 - MOV: ('M', 'E')
+2023-12-30 03:49:56.827 | DEBUG    | command_model:move:77 - MOVED: M[0xa3] <- E
+2023-12-30 03:49:56.827 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M E' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.827 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xa3 from 0x80a3
+2023-12-30 03:49:56.827 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A2H
+2023-12-30 03:49:56.828 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A2H')
+2023-12-30 03:49:56.828 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A2H')
+2023-12-30 03:49:56.828 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A2H']
+2023-12-30 03:49:56.828 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 03:49:56.828 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 03:49:56.828 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 03:49:56.828 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.828 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A2' Command to the list
+2023-12-30 03:49:56.828 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.828 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A2', executing..
+2023-12-30 03:49:56.828 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A2
+2023-12-30 03:49:56.828 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A2')
+2023-12-30 03:49:56.828 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.828 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa2
+2023-12-30 03:49:56.829 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.829 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.829 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, D
+2023-12-30 03:49:56.829 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'D')
+2023-12-30 03:49:56.829 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'D')
+2023-12-30 03:49:56.829 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'D']
+2023-12-30 03:49:56.829 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:49:56.829 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:49:56.829 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.829 | DEBUG    | interpreter:add_command:109 - Added 'MOV M D' Command to the list
+2023-12-30 03:49:56.829 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.830 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M D', executing..
+2023-12-30 03:49:56.830 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M D
+2023-12-30 03:49:56.830 | DEBUG    | command_model:move:73 - MOV: ('M', 'D')
+2023-12-30 03:49:56.830 | DEBUG    | command_model:move:77 - MOVED: M[0xff] <- D
+2023-12-30 03:49:56.830 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M D' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.830 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:49:56.830 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 03:49:56.830 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 03:49:56.830 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 03:49:56.830 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 03:49:56.830 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 03:49:56.831 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 03:49:56.831 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:49:56.831 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 03:49:56.831 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:49:56.831 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 03:49:56.831 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 03:49:56.831 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 03:49:56.831 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 03:49:56.831 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:54:52.753 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 03:54:52.753 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 03:54:52.754 | DEBUG    | __main__:process_command:46 - Command received: LDA 818AH
+2023-12-30 03:54:52.754 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '818AH')
+2023-12-30 03:54:52.754 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '818AH')
+2023-12-30 03:54:52.754 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '818AH']
+2023-12-30 03:54:52.754 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:54:52.754 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='818AH''
+2023-12-30 03:54:52.754 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:54:52.755 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.755 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x818A' Command to the list
+2023-12-30 03:54:52.755 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.755 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x818A', executing..
+2023-12-30 03:54:52.755 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x818A
+2023-12-30 03:54:52.755 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x818A',)
+2023-12-30 03:54:52.755 | DEBUG    | command_model:load_accumulator:101 - Address 0x818a is not in memory:
+2023-12-30 03:54:52.755 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x00
+2023-12-30 03:54:52.755 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x818A' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.755 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:54:52.756 | DEBUG    | __main__:process_command:46 - Command received: DAA 
+2023-12-30 03:54:52.756 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('DAA',)
+2023-12-30 03:54:52.756 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('DAA',)
+2023-12-30 03:54:52.756 | DEBUG    | converter:process_comments:80 - No comments found: ['DAA']
+2023-12-30 03:54:52.756 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'DAA'
+2023-12-30 03:54:52.756 | ERROR    | __main__:cmd_preprocessor:92 - Command 'DAA' not found.
+2023-12-30 03:54:52.757 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 03:54:52.757 | DEBUG    | __main__:process_command:46 - Command received: MOV L, A
+2023-12-30 03:54:52.757 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'L', 'A')
+2023-12-30 03:54:52.757 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'L', 'A')
+2023-12-30 03:54:52.757 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'L', 'A']
+2023-12-30 03:54:52.757 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:54:52.758 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:54:52.758 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.758 | DEBUG    | interpreter:add_command:109 - Added 'MOV L A' Command to the list
+2023-12-30 03:54:52.758 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.758 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV L A', executing..
+2023-12-30 03:54:52.758 | DEBUG    | command_model:eval:53 - Evaluating command: MOV L A
+2023-12-30 03:54:52.758 | DEBUG    | command_model:move:73 - MOV: ('L', 'A')
+2023-12-30 03:54:52.758 | DEBUG    | command_model:move:77 - MOVED: L[0x00] <- A
+2023-12-30 03:54:52.758 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV L A' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.759 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.759 | DEBUG    | __main__:process_command:46 - Command received: LDA 818BH
+2023-12-30 03:54:52.759 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '818BH')
+2023-12-30 03:54:52.759 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '818BH')
+2023-12-30 03:54:52.759 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '818BH']
+2023-12-30 03:54:52.759 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 03:54:52.759 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='818BH''
+2023-12-30 03:54:52.760 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 03:54:52.760 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.760 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x818B' Command to the list
+2023-12-30 03:54:52.760 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.760 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x818B', executing..
+2023-12-30 03:54:52.760 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x818B
+2023-12-30 03:54:52.760 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x818B',)
+2023-12-30 03:54:52.760 | DEBUG    | command_model:load_accumulator:101 - Address 0x818b is not in memory:
+2023-12-30 03:54:52.760 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x00
+2023-12-30 03:54:52.761 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x818B' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.761 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.761 | DEBUG    | __main__:process_command:46 - Command received: DAA 
+2023-12-30 03:54:52.761 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('DAA',)
+2023-12-30 03:54:52.761 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('DAA',)
+2023-12-30 03:54:52.761 | DEBUG    | converter:process_comments:80 - No comments found: ['DAA']
+2023-12-30 03:54:52.762 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'DAA'
+2023-12-30 03:54:52.762 | ERROR    | __main__:cmd_preprocessor:92 - Command 'DAA' not found.
+2023-12-30 03:54:52.762 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.762 | DEBUG    | __main__:process_command:46 - Command received: ADD L
+2023-12-30 03:54:52.762 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('ADD', 'L')
+2023-12-30 03:54:52.762 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('ADD', 'L')
+2023-12-30 03:54:52.763 | DEBUG    | converter:process_comments:80 - No comments found: ['ADD', 'L']
+2023-12-30 03:54:52.763 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'ADD'
+2023-12-30 03:54:52.763 | DEBUG    | __main__:cmd_preprocessor:98 - Command ADD found.
+2023-12-30 03:54:52.763 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.763 | DEBUG    | interpreter:add_command:109 - Added 'ADD L' Command to the list
+2023-12-30 03:54:52.763 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.763 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'ADD L', executing..
+2023-12-30 03:54:52.763 | DEBUG    | command_model:eval:53 - Evaluating command: ADD L
+2023-12-30 03:54:52.763 | DEBUG    | command_model:add:147 - ADD: ('L',)
+2023-12-30 03:54:52.763 | DEBUG    | command_model:add:152 - ADDED: 0x00
+2023-12-30 03:54:52.763 | DEBUG    | interpreter:evaluate_command:130 - Command 'ADD L' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.763 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.764 | DEBUG    | __main__:process_command:46 - Command received: STA 818C
+2023-12-30 03:54:52.764 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '818C')
+2023-12-30 03:54:52.764 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '818C')
+2023-12-30 03:54:52.764 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '818C']
+2023-12-30 03:54:52.764 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:54:52.764 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='818C''
+2023-12-30 03:54:52.764 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:54:52.764 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.764 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x818C' Command to the list
+2023-12-30 03:54:52.764 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.764 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x818C', executing..
+2023-12-30 03:54:52.764 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x818C
+2023-12-30 03:54:52.765 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x818C',)
+2023-12-30 03:54:52.765 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:54:52.765 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x818C' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.765 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.765 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 03:54:52.765 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 03:54:52.765 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 03:54:52.765 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 03:54:52.765 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 03:54:52.765 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 03:54:52.765 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.766 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 03:54:52.766 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.766 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 03:54:52.766 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 03:54:52.766 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 03:54:52.766 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.766 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.766 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 03:54:52.766 | DEBUG    | __main__:process_command:46 - Command received:   ;-------------
+2023-12-30 03:54:52.766 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: (';-------------',)
+2023-12-30 03:54:52.767 | DEBUG    | converter:process_comments:64 - Processing comments: Got (';-------------',)
+2023-12-30 03:54:52.767 | DEBUG    | converter:process_comments:76 - Processed comments: []
+2023-12-30 03:54:52.767 | DEBUG    | __main__:cmd_preprocessor:76 - Statements composed of solely of comments, ending evaluation.
+2023-12-30 03:54:52.767 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.767 | DEBUG    | __main__:process_command:46 - Command received:   ; More efficient by 2 byte:
+2023-12-30 03:54:52.767 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: (';', 'More', 'efficient', 'by', '2', 'byte:')
+2023-12-30 03:54:52.767 | DEBUG    | converter:process_comments:64 - Processing comments: Got (';', 'More', 'efficient', 'by', '2', 'byte:')
+2023-12-30 03:54:52.767 | DEBUG    | converter:process_comments:68 - Processed comments: []
+2023-12-30 03:54:52.767 | DEBUG    | __main__:cmd_preprocessor:76 - Statements composed of solely of comments, ending evaluation.
+2023-12-30 03:54:52.767 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.768 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 03:54:52.768 | DEBUG    | __main__:process_command:46 - Command received: LHLD 818AH
+2023-12-30 03:54:52.768 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LHLD', '818AH')
+2023-12-30 03:54:52.768 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LHLD', '818AH')
+2023-12-30 03:54:52.768 | DEBUG    | converter:process_comments:80 - No comments found: ['LHLD', '818AH']
+2023-12-30 03:54:52.768 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LHLD'
+2023-12-30 03:54:52.768 | ERROR    | __main__:cmd_preprocessor:92 - Command 'LHLD' not found.
+2023-12-30 03:54:52.768 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.769 | DEBUG    | __main__:process_command:46 - Command received: MOV A, L
+2023-12-30 03:54:52.769 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'L')
+2023-12-30 03:54:52.769 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'L')
+2023-12-30 03:54:52.769 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'L']
+2023-12-30 03:54:52.769 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:54:52.769 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:54:52.769 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.769 | DEBUG    | interpreter:add_command:109 - Added 'MOV A L' Command to the list
+2023-12-30 03:54:52.769 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.769 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV A L', executing..
+2023-12-30 03:54:52.769 | DEBUG    | command_model:eval:53 - Evaluating command: MOV A L
+2023-12-30 03:54:52.769 | DEBUG    | command_model:move:73 - MOV: ('A', 'L')
+2023-12-30 03:54:52.769 | DEBUG    | command_model:move:77 - MOVED: A[0x00] <- L
+2023-12-30 03:54:52.770 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV A L' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.770 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.770 | DEBUG    | __main__:process_command:46 - Command received: DAA
+2023-12-30 03:54:52.770 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('DAA',)
+2023-12-30 03:54:52.770 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('DAA',)
+2023-12-30 03:54:52.770 | DEBUG    | converter:process_comments:80 - No comments found: ['DAA']
+2023-12-30 03:54:52.770 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'DAA'
+2023-12-30 03:54:52.770 | ERROR    | __main__:cmd_preprocessor:92 - Command 'DAA' not found.
+2023-12-30 03:54:52.770 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.771 | DEBUG    | __main__:process_command:46 - Command received: MOV A,H
+2023-12-30 03:54:52.771 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'H')
+2023-12-30 03:54:52.771 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'H')
+2023-12-30 03:54:52.771 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'H']
+2023-12-30 03:54:52.771 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 03:54:52.771 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 03:54:52.771 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.771 | DEBUG    | interpreter:add_command:109 - Added 'MOV A H' Command to the list
+2023-12-30 03:54:52.771 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.771 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV A H', executing..
+2023-12-30 03:54:52.771 | DEBUG    | command_model:eval:53 - Evaluating command: MOV A H
+2023-12-30 03:54:52.771 | DEBUG    | command_model:move:73 - MOV: ('A', 'H')
+2023-12-30 03:54:52.771 | DEBUG    | command_model:move:77 - MOVED: A[0x80] <- H
+2023-12-30 03:54:52.772 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV A H' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.772 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.772 | DEBUG    | __main__:process_command:46 - Command received: DAA
+2023-12-30 03:54:52.772 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('DAA',)
+2023-12-30 03:54:52.772 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('DAA',)
+2023-12-30 03:54:52.772 | DEBUG    | converter:process_comments:80 - No comments found: ['DAA']
+2023-12-30 03:54:52.772 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'DAA'
+2023-12-30 03:54:52.772 | ERROR    | __main__:cmd_preprocessor:92 - Command 'DAA' not found.
+2023-12-30 03:54:52.772 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.773 | DEBUG    | __main__:process_command:46 - Command received: ADD L
+2023-12-30 03:54:52.773 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('ADD', 'L')
+2023-12-30 03:54:52.773 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('ADD', 'L')
+2023-12-30 03:54:52.773 | DEBUG    | converter:process_comments:80 - No comments found: ['ADD', 'L']
+2023-12-30 03:54:52.773 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'ADD'
+2023-12-30 03:54:52.773 | DEBUG    | __main__:cmd_preprocessor:98 - Command ADD found.
+2023-12-30 03:54:52.773 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.773 | DEBUG    | interpreter:add_command:109 - Added 'ADD L' Command to the list
+2023-12-30 03:54:52.773 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.773 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'ADD L', executing..
+2023-12-30 03:54:52.773 | DEBUG    | command_model:eval:53 - Evaluating command: ADD L
+2023-12-30 03:54:52.773 | DEBUG    | command_model:add:147 - ADD: ('L',)
+2023-12-30 03:54:52.773 | DEBUG    | command_model:add:152 - ADDED: 0x80
+2023-12-30 03:54:52.774 | DEBUG    | interpreter:evaluate_command:130 - Command 'ADD L' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.774 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.774 | DEBUG    | __main__:process_command:46 - Command received: STA 818C
+2023-12-30 03:54:52.774 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '818C')
+2023-12-30 03:54:52.774 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '818C')
+2023-12-30 03:54:52.774 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '818C']
+2023-12-30 03:54:52.774 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 03:54:52.774 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='818C''
+2023-12-30 03:54:52.774 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 03:54:52.774 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.774 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x818C' Command to the list
+2023-12-30 03:54:52.775 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.775 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x818C', executing..
+2023-12-30 03:54:52.775 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x818C
+2023-12-30 03:54:52.775 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x818C',)
+2023-12-30 03:54:52.775 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 03:54:52.775 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x818C' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.775 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 03:54:52.775 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 03:54:52.775 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 03:54:52.775 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 03:54:52.775 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 03:54:52.776 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 03:54:52.776 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 03:54:52.776 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:54:52.776 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 03:54:52.776 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:54:52.776 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 03:54:52.776 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 03:54:52.776 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 03:54:52.776 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 03:54:52.776 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.296 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 04:38:33.296 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 04:38:33.297 | DEBUG    | __main__:process_command:46 - Command received: MVI A, FFH
+2023-12-30 04:38:33.297 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', 'FFH')
+2023-12-30 04:38:33.297 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', 'FFH')
+2023-12-30 04:38:33.297 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', 'FFH']
+2023-12-30 04:38:33.297 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 04:38:33.297 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='FFH''
+2023-12-30 04:38:33.297 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 04:38:33.297 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.298 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0xFF' Command to the list
+2023-12-30 04:38:33.298 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.298 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0xFF', executing..
+2023-12-30 04:38:33.298 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0xFF
+2023-12-30 04:38:33.298 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0xFF')
+2023-12-30 04:38:33.298 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0xff'
+2023-12-30 04:38:33.298 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0xFF' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.298 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.298 | DEBUG    | __main__:process_command:46 - Command received: STA 80A2H
+2023-12-30 04:38:33.299 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A2H')
+2023-12-30 04:38:33.299 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A2H')
+2023-12-30 04:38:33.299 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A2H']
+2023-12-30 04:38:33.299 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 04:38:33.299 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 04:38:33.299 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 04:38:33.299 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.299 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A2' Command to the list
+2023-12-30 04:38:33.299 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.300 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A2', executing..
+2023-12-30 04:38:33.300 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A2
+2023-12-30 04:38:33.300 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A2',)
+2023-12-30 04:38:33.300 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 04:38:33.300 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.300 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.301 | DEBUG    | __main__:process_command:46 - Command received: MVI A, A2H
+2023-12-30 04:38:33.301 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', 'A2H')
+2023-12-30 04:38:33.301 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', 'A2H')
+2023-12-30 04:38:33.301 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', 'A2H']
+2023-12-30 04:38:33.301 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 04:38:33.301 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='A2H''
+2023-12-30 04:38:33.301 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 04:38:33.301 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.301 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0xA2' Command to the list
+2023-12-30 04:38:33.302 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.302 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0xA2', executing..
+2023-12-30 04:38:33.302 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0xA2
+2023-12-30 04:38:33.302 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0xA2')
+2023-12-30 04:38:33.302 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0xa2'
+2023-12-30 04:38:33.302 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0xA2' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.302 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.303 | DEBUG    | __main__:process_command:46 - Command received: STA 80A3H
+2023-12-30 04:38:33.303 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A3H')
+2023-12-30 04:38:33.303 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A3H')
+2023-12-30 04:38:33.303 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A3H']
+2023-12-30 04:38:33.303 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 04:38:33.303 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 04:38:33.303 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 04:38:33.303 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.304 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A3' Command to the list
+2023-12-30 04:38:33.304 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.304 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A3', executing..
+2023-12-30 04:38:33.304 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A3
+2023-12-30 04:38:33.304 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A3',)
+2023-12-30 04:38:33.304 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 04:38:33.304 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.304 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.305 | DEBUG    | __main__:process_command:46 - Command received: MVI A, 00H
+2023-12-30 04:38:33.305 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', '00H')
+2023-12-30 04:38:33.305 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', '00H')
+2023-12-30 04:38:33.305 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', '00H']
+2023-12-30 04:38:33.305 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 04:38:33.305 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='00H''
+2023-12-30 04:38:33.305 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 04:38:33.305 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.306 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0x00' Command to the list
+2023-12-30 04:38:33.306 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.306 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0x00', executing..
+2023-12-30 04:38:33.306 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0x00
+2023-12-30 04:38:33.306 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0x00')
+2023-12-30 04:38:33.306 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0x00'
+2023-12-30 04:38:33.306 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0x00' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.306 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.307 | DEBUG    | __main__:process_command:46 - Command received: STA 80A4H
+2023-12-30 04:38:33.307 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A4H')
+2023-12-30 04:38:33.307 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A4H')
+2023-12-30 04:38:33.307 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A4H']
+2023-12-30 04:38:33.307 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 04:38:33.307 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A4H''
+2023-12-30 04:38:33.307 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 04:38:33.307 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.308 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A4' Command to the list
+2023-12-30 04:38:33.308 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.308 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A4', executing..
+2023-12-30 04:38:33.308 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A4
+2023-12-30 04:38:33.308 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A4',)
+2023-12-30 04:38:33.308 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 04:38:33.308 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A4' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.308 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.309 | DEBUG    | __main__:process_command:46 - Command received: MVI A, 26H
+2023-12-30 04:38:33.309 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', '26H')
+2023-12-30 04:38:33.309 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', '26H')
+2023-12-30 04:38:33.309 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', '26H']
+2023-12-30 04:38:33.309 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 04:38:33.309 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='26H''
+2023-12-30 04:38:33.309 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 04:38:33.309 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.309 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0x26' Command to the list
+2023-12-30 04:38:33.309 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.309 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0x26', executing..
+2023-12-30 04:38:33.310 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0x26
+2023-12-30 04:38:33.310 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0x26')
+2023-12-30 04:38:33.310 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0x26'
+2023-12-30 04:38:33.310 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0x26' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.310 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.310 | DEBUG    | __main__:process_command:46 - Command received: STA 80A5H
+2023-12-30 04:38:33.310 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('STA', '80A5H')
+2023-12-30 04:38:33.310 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('STA', '80A5H')
+2023-12-30 04:38:33.310 | DEBUG    | converter:process_comments:80 - No comments found: ['STA', '80A5H']
+2023-12-30 04:38:33.310 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'STA'
+2023-12-30 04:38:33.310 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A5H''
+2023-12-30 04:38:33.311 | DEBUG    | __main__:cmd_preprocessor:98 - Command STA found.
+2023-12-30 04:38:33.311 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.311 | DEBUG    | interpreter:add_command:109 - Added 'STA 0x80A5' Command to the list
+2023-12-30 04:38:33.311 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.311 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'STA 0x80A5', executing..
+2023-12-30 04:38:33.311 | DEBUG    | command_model:eval:53 - Evaluating command: STA 0x80A5
+2023-12-30 04:38:33.311 | DEBUG    | command_model:store_accumulator:117 - STA: ('0x80A5',)
+2023-12-30 04:38:33.311 | DEBUG    | command_model:store_accumulator:121 - STORED ACCUMULATOR:
+2023-12-30 04:38:33.311 | DEBUG    | interpreter:evaluate_command:130 - Command 'STA 0x80A5' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.311 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.311 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 04:38:33.312 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A2H
+2023-12-30 04:38:33.312 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A2H')
+2023-12-30 04:38:33.312 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A2H')
+2023-12-30 04:38:33.312 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A2H']
+2023-12-30 04:38:33.312 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 04:38:33.312 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 04:38:33.312 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 04:38:33.312 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.312 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A2' Command to the list
+2023-12-30 04:38:33.312 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.312 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A2', executing..
+2023-12-30 04:38:33.312 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A2
+2023-12-30 04:38:33.313 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A2',)
+2023-12-30 04:38:33.313 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0xff
+2023-12-30 04:38:33.313 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.313 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.313 | DEBUG    | __main__:process_command:46 - Command received: MOV  D, A
+2023-12-30 04:38:33.313 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'D', 'A')
+2023-12-30 04:38:33.313 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'D', 'A')
+2023-12-30 04:38:33.313 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'D', 'A']
+2023-12-30 04:38:33.313 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.313 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.313 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.314 | DEBUG    | interpreter:add_command:109 - Added 'MOV D A' Command to the list
+2023-12-30 04:38:33.314 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.314 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV D A', executing..
+2023-12-30 04:38:33.314 | DEBUG    | command_model:eval:53 - Evaluating command: MOV D A
+2023-12-30 04:38:33.314 | DEBUG    | command_model:move:73 - MOV: ('D', 'A')
+2023-12-30 04:38:33.314 | DEBUG    | command_model:move:77 - MOVED: D[0xff] <- A
+2023-12-30 04:38:33.314 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV D A' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.314 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.314 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A3H
+2023-12-30 04:38:33.314 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A3H')
+2023-12-30 04:38:33.314 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A3H')
+2023-12-30 04:38:33.315 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A3H']
+2023-12-30 04:38:33.315 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 04:38:33.315 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 04:38:33.315 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 04:38:33.315 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.315 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A3' Command to the list
+2023-12-30 04:38:33.315 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.315 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A3', executing..
+2023-12-30 04:38:33.315 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A3
+2023-12-30 04:38:33.315 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A3',)
+2023-12-30 04:38:33.315 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0xa2
+2023-12-30 04:38:33.315 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.315 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.316 | DEBUG    | __main__:process_command:46 - Command received: MOV  E, A
+2023-12-30 04:38:33.316 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'E', 'A')
+2023-12-30 04:38:33.316 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'E', 'A')
+2023-12-30 04:38:33.316 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'E', 'A']
+2023-12-30 04:38:33.316 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.316 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.316 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.316 | DEBUG    | interpreter:add_command:109 - Added 'MOV E A' Command to the list
+2023-12-30 04:38:33.316 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.316 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV E A', executing..
+2023-12-30 04:38:33.316 | DEBUG    | command_model:eval:53 - Evaluating command: MOV E A
+2023-12-30 04:38:33.316 | DEBUG    | command_model:move:73 - MOV: ('E', 'A')
+2023-12-30 04:38:33.317 | DEBUG    | command_model:move:77 - MOVED: E[0xa2] <- A
+2023-12-30 04:38:33.317 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV E A' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.317 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.317 | DEBUG    | __main__:process_command:46 - Command received: INR  E
+2023-12-30 04:38:33.317 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('INR', 'E')
+2023-12-30 04:38:33.317 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('INR', 'E')
+2023-12-30 04:38:33.317 | DEBUG    | converter:process_comments:80 - No comments found: ['INR', 'E']
+2023-12-30 04:38:33.317 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'INR'
+2023-12-30 04:38:33.317 | DEBUG    | __main__:cmd_preprocessor:98 - Command INR found.
+2023-12-30 04:38:33.317 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.317 | DEBUG    | interpreter:add_command:109 - Added 'INR E' Command to the list
+2023-12-30 04:38:33.318 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.318 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'INR E', executing..
+2023-12-30 04:38:33.318 | DEBUG    | command_model:eval:53 - Evaluating command: INR E
+2023-12-30 04:38:33.318 | DEBUG    | command_model:increment_register:319 - INR: ('E',)
+2023-12-30 04:38:33.318 | DEBUG    | command_model:increment_register:326 - Incremented: E to 0xa3
+2023-12-30 04:38:33.318 | DEBUG    | interpreter:evaluate_command:130 - Command 'INR E' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.318 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.318 | DEBUG    | __main__:process_command:46 - Command received: MOV  A, D
+2023-12-30 04:38:33.318 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'D')
+2023-12-30 04:38:33.318 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'D')
+2023-12-30 04:38:33.318 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'D']
+2023-12-30 04:38:33.319 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.319 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.319 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.319 | DEBUG    | interpreter:add_command:109 - Added 'MOV A D' Command to the list
+2023-12-30 04:38:33.319 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.319 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV A D', executing..
+2023-12-30 04:38:33.319 | DEBUG    | command_model:eval:53 - Evaluating command: MOV A D
+2023-12-30 04:38:33.319 | DEBUG    | command_model:move:73 - MOV: ('A', 'D')
+2023-12-30 04:38:33.319 | DEBUG    | command_model:move:77 - MOVED: A[0xff] <- D
+2023-12-30 04:38:33.319 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV A D' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.319 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.319 | DEBUG    | __main__:process_command:46 - Command received: ADC  E
+2023-12-30 04:38:33.320 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('ADC', 'E')
+2023-12-30 04:38:33.320 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('ADC', 'E')
+2023-12-30 04:38:33.320 | DEBUG    | converter:process_comments:80 - No comments found: ['ADC', 'E']
+2023-12-30 04:38:33.320 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'ADC'
+2023-12-30 04:38:33.320 | ERROR    | __main__:cmd_preprocessor:92 - Command 'ADC' not found.
+2023-12-30 04:38:33.320 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.320 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 04:38:33.320 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A4H
+2023-12-30 04:38:33.320 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A4H')
+2023-12-30 04:38:33.321 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A4H')
+2023-12-30 04:38:33.321 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A4H']
+2023-12-30 04:38:33.321 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 04:38:33.321 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A4H''
+2023-12-30 04:38:33.321 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 04:38:33.321 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.321 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A4' Command to the list
+2023-12-30 04:38:33.321 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.321 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A4', executing..
+2023-12-30 04:38:33.321 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A4
+2023-12-30 04:38:33.321 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A4',)
+2023-12-30 04:38:33.321 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x00
+2023-12-30 04:38:33.321 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A4' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.321 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.322 | DEBUG    | __main__:process_command:46 - Command received: MOV  D, A
+2023-12-30 04:38:33.322 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'D', 'A')
+2023-12-30 04:38:33.322 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'D', 'A')
+2023-12-30 04:38:33.322 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'D', 'A']
+2023-12-30 04:38:33.322 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.322 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.322 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.322 | DEBUG    | interpreter:add_command:109 - Added 'MOV D A' Command to the list
+2023-12-30 04:38:33.322 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.322 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV D A', executing..
+2023-12-30 04:38:33.322 | DEBUG    | command_model:eval:53 - Evaluating command: MOV D A
+2023-12-30 04:38:33.323 | DEBUG    | command_model:move:73 - MOV: ('D', 'A')
+2023-12-30 04:38:33.323 | DEBUG    | command_model:move:77 - MOVED: D[0x00] <- A
+2023-12-30 04:38:33.323 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV D A' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.323 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.323 | DEBUG    | __main__:process_command:46 - Command received: LDA, 80A5H
+2023-12-30 04:38:33.324 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LDA', '80A5H')
+2023-12-30 04:38:33.324 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LDA', '80A5H')
+2023-12-30 04:38:33.324 | DEBUG    | converter:process_comments:80 - No comments found: ['LDA', '80A5H']
+2023-12-30 04:38:33.324 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LDA'
+2023-12-30 04:38:33.324 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A5H''
+2023-12-30 04:38:33.324 | DEBUG    | __main__:cmd_preprocessor:98 - Command LDA found.
+2023-12-30 04:38:33.324 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.324 | DEBUG    | interpreter:add_command:109 - Added 'LDA 0x80A5' Command to the list
+2023-12-30 04:38:33.324 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.324 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LDA 0x80A5', executing..
+2023-12-30 04:38:33.325 | DEBUG    | command_model:eval:53 - Evaluating command: LDA 0x80A5
+2023-12-30 04:38:33.325 | DEBUG    | command_model:load_accumulator:96 - LDA: ('0x80A5',)
+2023-12-30 04:38:33.325 | DEBUG    | command_model:load_accumulator:107 - LOADED ACCUMULATOR: 0x26
+2023-12-30 04:38:33.325 | DEBUG    | interpreter:evaluate_command:130 - Command 'LDA 0x80A5' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.325 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.325 | DEBUG    | __main__:process_command:46 - Command received: MOV  E, A
+2023-12-30 04:38:33.326 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'E', 'A')
+2023-12-30 04:38:33.326 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'E', 'A')
+2023-12-30 04:38:33.326 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'E', 'A']
+2023-12-30 04:38:33.326 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.326 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.326 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.326 | DEBUG    | interpreter:add_command:109 - Added 'MOV E A' Command to the list
+2023-12-30 04:38:33.326 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.326 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV E A', executing..
+2023-12-30 04:38:33.326 | DEBUG    | command_model:eval:53 - Evaluating command: MOV E A
+2023-12-30 04:38:33.326 | DEBUG    | command_model:move:73 - MOV: ('E', 'A')
+2023-12-30 04:38:33.326 | DEBUG    | command_model:move:77 - MOVED: E[0x26] <- A
+2023-12-30 04:38:33.326 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV E A' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.327 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.327 | DEBUG    | __main__:process_command:46 - Command received: DCR  E
+2023-12-30 04:38:33.327 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('DCR', 'E')
+2023-12-30 04:38:33.327 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('DCR', 'E')
+2023-12-30 04:38:33.327 | DEBUG    | converter:process_comments:80 - No comments found: ['DCR', 'E']
+2023-12-30 04:38:33.327 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'DCR'
+2023-12-30 04:38:33.327 | DEBUG    | __main__:cmd_preprocessor:98 - Command DCR found.
+2023-12-30 04:38:33.327 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.327 | DEBUG    | interpreter:add_command:109 - Added 'DCR E' Command to the list
+2023-12-30 04:38:33.327 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.327 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'DCR E', executing..
+2023-12-30 04:38:33.328 | DEBUG    | command_model:eval:53 - Evaluating command: DCR E
+2023-12-30 04:38:33.328 | DEBUG    | command_model:decrement_register:335 - DCR: ('E',)
+2023-12-30 04:38:33.328 | DEBUG    | command_model:decrement_register:348 - Decremented: E to 0x25
+2023-12-30 04:38:33.328 | DEBUG    | interpreter:evaluate_command:130 - Command 'DCR E' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.328 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.328 | DEBUG    | __main__:process_command:46 - Command received: MOV  A, D
+2023-12-30 04:38:33.328 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'A', 'D')
+2023-12-30 04:38:33.328 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'A', 'D')
+2023-12-30 04:38:33.328 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'A', 'D']
+2023-12-30 04:38:33.328 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.328 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.329 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.329 | DEBUG    | interpreter:add_command:109 - Added 'MOV A D' Command to the list
+2023-12-30 04:38:33.329 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.329 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV A D', executing..
+2023-12-30 04:38:33.329 | DEBUG    | command_model:eval:53 - Evaluating command: MOV A D
+2023-12-30 04:38:33.329 | DEBUG    | command_model:move:73 - MOV: ('A', 'D')
+2023-12-30 04:38:33.329 | DEBUG    | command_model:move:77 - MOVED: A[0x00] <- D
+2023-12-30 04:38:33.329 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV A D' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.329 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.329 | DEBUG    | __main__:process_command:46 - Command received: SBB  D
+2023-12-30 04:38:33.329 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('SBB', 'D')
+2023-12-30 04:38:33.329 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('SBB', 'D')
+2023-12-30 04:38:33.330 | DEBUG    | converter:process_comments:80 - No comments found: ['SBB', 'D']
+2023-12-30 04:38:33.330 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'SBB'
+2023-12-30 04:38:33.330 | ERROR    | __main__:cmd_preprocessor:92 - Command 'SBB' not found.
+2023-12-30 04:38:33.330 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x8000
+2023-12-30 04:38:33.330 | DEBUG    | __main__:process_command:46 - Command received: 
+2023-12-30 04:38:33.330 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A3H
+2023-12-30 04:38:33.330 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A3H')
+2023-12-30 04:38:33.330 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A3H')
+2023-12-30 04:38:33.330 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A3H']
+2023-12-30 04:38:33.331 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 04:38:33.331 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A3H''
+2023-12-30 04:38:33.331 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 04:38:33.331 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.331 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A3' Command to the list
+2023-12-30 04:38:33.331 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.331 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A3', executing..
+2023-12-30 04:38:33.331 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A3
+2023-12-30 04:38:33.331 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A3')
+2023-12-30 04:38:33.331 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xa2 from 0x80a3
+2023-12-30 04:38:33.331 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa3
+2023-12-30 04:38:33.331 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A3' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.331 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xa2 from 0x80a3
+2023-12-30 04:38:33.332 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, E
+2023-12-30 04:38:33.332 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'E')
+2023-12-30 04:38:33.332 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'E')
+2023-12-30 04:38:33.332 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'E']
+2023-12-30 04:38:33.332 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.332 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.332 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.332 | DEBUG    | interpreter:add_command:109 - Added 'MOV M E' Command to the list
+2023-12-30 04:38:33.332 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.332 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M E', executing..
+2023-12-30 04:38:33.332 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M E
+2023-12-30 04:38:33.332 | DEBUG    | command_model:move:73 - MOV: ('M', 'E')
+2023-12-30 04:38:33.333 | DEBUG    | command_model:move:77 - MOVED: M[0x25] <- E
+2023-12-30 04:38:33.333 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M E' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.333 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x25 from 0x80a3
+2023-12-30 04:38:33.333 | DEBUG    | __main__:process_command:46 - Command received: LXI  H, 80A2H
+2023-12-30 04:38:33.333 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('LXI', 'H', '80A2H')
+2023-12-30 04:38:33.333 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('LXI', 'H', '80A2H')
+2023-12-30 04:38:33.333 | DEBUG    | converter:process_comments:80 - No comments found: ['LXI', 'H', '80A2H']
+2023-12-30 04:38:33.333 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'LXI'
+2023-12-30 04:38:33.333 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='80A2H''
+2023-12-30 04:38:33.333 | DEBUG    | __main__:cmd_preprocessor:98 - Command LXI found.
+2023-12-30 04:38:33.333 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.334 | DEBUG    | interpreter:add_command:109 - Added 'LXI H 0x80A2' Command to the list
+2023-12-30 04:38:33.334 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.334 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'LXI H 0x80A2', executing..
+2023-12-30 04:38:33.334 | DEBUG    | command_model:eval:53 - Evaluating command: LXI H 0x80A2
+2023-12-30 04:38:33.334 | DEBUG    | command_model:load_register_pair_immediate:400 - LXI: ('H', '0x80A2')
+2023-12-30 04:38:33.334 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 04:38:33.334 | DEBUG    | state_model:set_register_pair_value:91 - Pair HL Loaded: 0x80, 0xa2
+2023-12-30 04:38:33.334 | DEBUG    | interpreter:evaluate_command:130 - Command 'LXI H 0x80A2' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.334 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0xff from 0x80a2
+2023-12-30 04:38:33.334 | DEBUG    | __main__:process_command:46 - Command received: MOV  M, D
+2023-12-30 04:38:33.334 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MOV', 'M', 'D')
+2023-12-30 04:38:33.335 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MOV', 'M', 'D')
+2023-12-30 04:38:33.335 | DEBUG    | converter:process_comments:80 - No comments found: ['MOV', 'M', 'D']
+2023-12-30 04:38:33.335 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MOV'
+2023-12-30 04:38:33.335 | DEBUG    | __main__:cmd_preprocessor:98 - Command MOV found.
+2023-12-30 04:38:33.335 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.335 | DEBUG    | interpreter:add_command:109 - Added 'MOV M D' Command to the list
+2023-12-30 04:38:33.335 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.335 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MOV M D', executing..
+2023-12-30 04:38:33.335 | DEBUG    | command_model:eval:53 - Evaluating command: MOV M D
+2023-12-30 04:38:33.335 | DEBUG    | command_model:move:73 - MOV: ('M', 'D')
+2023-12-30 04:38:33.335 | DEBUG    | command_model:move:77 - MOVED: M[0x00] <- D
+2023-12-30 04:38:33.335 | DEBUG    | interpreter:evaluate_command:130 - Command 'MOV M D' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.335 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2
+2023-12-30 04:38:33.336 | DEBUG    | __main__:process_command:46 - Command received: HLT
+2023-12-30 04:38:33.336 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('HLT',)
+2023-12-30 04:38:33.336 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('HLT',)
+2023-12-30 04:38:33.336 | DEBUG    | converter:process_comments:80 - No comments found: ['HLT']
+2023-12-30 04:38:33.336 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'HLT'
+2023-12-30 04:38:33.336 | DEBUG    | __main__:cmd_preprocessor:98 - Command HLT found.
+2023-12-30 04:38:33.336 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 04:38:33.336 | DEBUG    | interpreter:add_command:109 - Added 'HLT ' Command to the list
+2023-12-30 04:38:33.336 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 04:38:33.336 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'HLT ', executing..
+2023-12-30 04:38:33.336 | DEBUG    | command_model:eval:53 - Evaluating command: HLT 
+2023-12-30 04:38:33.336 | DEBUG    | command_model:halt:66 - HLT received.
+2023-12-30 04:38:33.337 | DEBUG    | interpreter:evaluate_command:130 - Command 'HLT ' evaluation complete. Got 'label=None'
+2023-12-30 04:38:33.337 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2

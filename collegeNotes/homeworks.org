@@ -1,0 +1,5 @@
+#+TITLE Homeworks
+
+* DONE NM table
+* DONE Microprocessor differences
+* DONE DSA Assignment

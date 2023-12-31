@@ -1,0 +1,7 @@
+#+TITLE: Tasks
+
+* Inbox
+** TODO  DSA Assignments
+** TODO Instrumentation
+** TODO Paper Continuation
+** TODO DS Assignment

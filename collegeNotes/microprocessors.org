@@ -1,0 +1,103 @@
+:PROPERTIES:
+:ID:       e4b6ee9a-a079-4311-9455-18df3b0b956e
+:END:
+#+title: Microprocessors (M)
+#+Author:Adarsha Acharya
+
+
+* Introduction
+** Resources provided by Ma'am:
+[[~/Documents/collegeNotes/resources/MP_Ch1.pptx][  Chapter 1 Powerpoint  ]] 
+
+** Class 1 
+Overview: Bit,Bytes: Kilo, mega, giga, tera, peta; Buses, Memory capacity, Definition of Microprocesor, Microcontroller, Difference between microprocessor and microcontroller, Organization of microprocessor based system: ALU, Register Array, CU, I/O devices, Memory, System Bus: Address Bus, Data Bus, Control Bus/lines; Automated Calulator
+*** Link: [[~/Documents/PDFs/M1.pdf][  M Class 1  ]]
+*** DONE Q1:
+Why does 8086 have 2^(20) bytes instead of 2^(21)?
+- The data bus of 16 bit doesnt imply that the memory sections are also of 2 bytes. All memories are sectioned as 1 bytes each.
+*** DONE Q2:
+Why is MCU less expensive than MPU, despite MPU being used in MCU?
+- The MPU is used in both microprocessors and microcontrollers. However, the other peripheral elements are what make them more expensive.
+
+
+* Programming with 8085 Microprocessor
+
+[[~/Documents/collegeNotes/resources/MP_Ch2.pptx][  Chapter 2 Powerpoint  ]] 
+
+** Class 2 
+Overview: Architecture of microprocessor based system: Von Neuman Architecture; History of computer; Evolution of microprocessor, Control unit, Processing  cycle of stored program
+*** Link:[[~/Documents/PDFs/M2.pdf][  M Class 2  ]]
+
+** Class 3 
+Overview: IO/M, ALE, TRAP, Types of Instruction format, Classification of instructions, Data transfer group instruction, MOV, MVI, MOV
+*** Link :[[~/Documents/PDFs/M3.pdf][  M Class 3  ]]
+
+** Class 4 
+Overview: LXI, MVI, LDA, LDAX, STA, STAX
+*** Link : [[/home/chilly/Documents/PDFs/M4.pdf][  M Class 4  ]] 
+
+** Class 5 
+Overview: IN, OUT, LHLD, SHLD, XCHG, Addressing Modes: Direct Addressing Mode, Reg Direct Adrressing Mode, Reg Indirect Addressing Mode, Immediate Addressing Mode, Implied/Inherit Addressing Mode, 
+*** Link : [[/home/chilly/Documents/PDFs/M5.pdf][  M Class 5  ]] 
+
+** Class 6 
+Overview: Swap with XCHG, ADD, ADI, SUB, SUI, INR, INX, ADC, ACI
+*** Link : [[/home/chilly/Documents/PDFs/M6.pdf][  M Class 6  ]] 
+
+** Class 7 
+Overview: IN, OUT, LHLD, SHLD, XCHG, Addressing Modes: Direct Addressing Mode, Register Direct Addressing Mode, Register Indirect addressing mode, Immediate Addressing mode, Implied/Inherit addressing Mode
+*** Link : [[/home/chilly/Documents/PDFs/M7.pdf][  M Class 7  ]] 
+
+  
+  
+* Programming with 8086 Microprocessor
+
+* Microporcessor system
+
+* Interrupt Operations
+
+* Advanced topics
+
+
+* ADTs
+** Practice questions:
+1. Define Microprocessor based system.
+   Microprocessor based system refers to a computing device having Microprocessor as a CPU.
+2. Differentiate between Microcontroller and microprocessor.
+3. Explain programming model of 8085 microprocessor
+   +------------------+----------------+
+   | Accumulator      | Flags Register |
+   |------------------+----------------|
+   | B                | C              |
+   |------------------+----------------|
+   | D                | E              |
+   |------------------+----------------|
+   | H                | L              |
+   |------------------+----------------|
+   | Stack Pointer    | SP             |
+   |------------------+----------------|
+   | Program Counter  | PC             |
+   |------------------+----------------|
+   | Address/Data Bus | Address Bus    |
+   |------------------+----------------|
+   |                 |               |
+   | AD0-AD7          | A8-A15         |
+   |------------------+----------------|
+                    
+
+4. Explain Von Newmann architecture with limitation.
+   Von Neuman Architecture is the basic architecture upon which today's digital computers are based on.  They consist of a main memory where both data and instructions are stored. It consists of multiple Registers which are as follows:
+   i. MBR
+  ii. MAR
+  iii. IR
+  iv. IBR
+  v. PC
+  vi. A and MQ
+  
+5. Draw internal architecture of 8085 microprocessor.
+6. Explain MOV, MVI, LXI, LHLD, SHLD, XCHG, LDA, STAX instructions with examples.
+7. Explain flag registers.
+   Flag Registers are 8-bit registers that show the status of the previous operations in the microprocessor. There are 5 different flags in a flag register. They are:
+   | D7 | D6 | D5 | D4 | D3 | D2 | D1 | D0 |
+   | S  | Z  | -  | AC | -  | P  | -  | CY |
+8. Write down some characteristics of 8085 microprocessor.

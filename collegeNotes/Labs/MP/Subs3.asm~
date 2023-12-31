@@ -1,0 +1,9 @@
+MOV A, 25H
+MOV B, 48H
+
+; Subtract B from A
+MOV C, B
+MOV B, A
+MOV A, C
+
+SUB B

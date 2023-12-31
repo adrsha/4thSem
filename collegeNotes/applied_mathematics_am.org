@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       09aa27b7-f197-4d03-bce6-6e01343dacae
+:END:
+#+title: Applied Mathematics (AM)
+#+Author:Adarsha Acharya
+
+* Complex Analysis =SB=
+
+** Class 1 
+Overview: Definition of Complex Variables, Analytic/Regular/Holomorphic functions, Necessary and Sufficient condition to be analytic, cauchy Reimann equation,
+*** Links: [[~/Documents/PDFs/AM1.pdf][  AM Class  1 ]]
+**** Resources:
+[[https://www.youtube.com/watch?v=a0llOexzWXg][  Proof for Necessary and sufficient condition for Analytic Function  ]]
+*** Questions: [4/4]
+***** DONE Q1:
+The definition states that there may be one of more values of function w's which corresponds to the complex variable z. However, this violates the definition of a function. What is happening here?
+- It doesnt mean value as in a function with multiple values. It means that multiple functions can have the same domain.
+***** DONE Q2:
+What does a single valued function mean?
+- A function whose range is a single value per domain.
+***** DONE Q3:
+How come the example in Holomorphic function not have a unique derivative and still be a Holomorphic function?
+- The unique here means that Holomorphic functions have one single derivative at any point.
+***** DONE Q4:
+During the proof for analytic function's conditions, why were the two values for f(z)'s equated?
+- Because an analytic function is supposed to have a =unique derivative=.
+
+
+
+** Class 2
+*** Links: [[~/Documents/PDFs/AM2.pdf][  AM Class 2  ]] 
+Overview: Not analytic at origin despite having C.R equations satisfied, Construction of Analytic function: find real part if imaginary is given and viceversa
+
+
+** Class 3
+Overview: Harmonic Function, Harmonic conjugate, Conformal Mapping, Transformations: Translation, magnification and rotation, Inversion and Reflection, Infinite strip. 
+*** Links: [[~/Documents/PDFs/AM3.pdf][  AM Class 3  ]] 
+
+
+** Class 3
+Overview: Bilinear/Mobius/Linear Functional transformation, Cross Ratio, Fixed/Invariant/Critical Points, Complex Integration
+*** Links: [[~/Documents/PDFs/AM4.pdf][  AM Class 4  ]]
+
+* TODO INCOMPLETE NOTES (from Line integration to Z-transform)
+
+* The Z-Transform =DRK=
+
+** Class 1 
+Overview : Definition of Z-transform, Unilateral and bilateral Z-transform, Region of Convergence(ROC), Polynomial Function, Exponential function, Unit Impulse/Dirac Delta function, Unit-Ramp function, Sinusoidal function,  Z-transform of t^n
+*** Links :  [[~/Documents/PDFs/AM0.pdf][ AM Class  0 ]] [[~/Documents/PDFs/AMSP1.pdf][  AM Class 1  ]] 
+
+
+** Class 2 
+Overview : Properties of Z-transform: Linearity, Multiplication by a^k, Multiplication by K
+*** Links : [[~/Documents/PDFs/AMSP2.pdf][  AM Class 2  ]] 
+
+
+
+* TODO INCOMPLETE NOTES (From division by k to Numericals)
+
+** Class 4 
+Overview : Numericals on Z-transform: For multiplication by k, t and a^(k), Inverse Z-transform, Methods of finding inverses: Long Division Method, Partial fraction Method
+*** Links : [[~/Documents/PDFs/AMSP4.pdf][  AM Class 4  ]] 
+
+** Class 5 
+Overview : Calculus of residues or Inversion integral method, Application of Z-transform to differential equations
+*** Links : [[~/Documents/PDFs/AMSP5.pdf][  AM Class 5  ]] 
+
+
+* Partial Differential Equations
+* Fourier Transform

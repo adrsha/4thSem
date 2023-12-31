@@ -1,0 +1,245 @@
+
+#+title: Computer Lab
+#+author: Adarsha Acharya
+
+* Lab 1
+Implementation of Stack Operations
+
+** Theory
+*** Stack:
+ A stack is a fundamental abstract data type that adheres to the Last In, First Out (LIFO) principle. It models a collection of elements with two primary operations:
+
+    Push: Adding an element to the top of the stack.
+    Pop: Removing the topmost element from the stack.
+
+A third operation, commonly supported, is:
+
+    Peek or Top: Viewing the top element without removing it.
+
+Stacks are pivotal in computer science and software engineering for their role in managing function calls (known as the call stack), parsing and evaluating expressions, and supporting various algorithms like depth-first search. They find application in diverse scenarios such as compiler parsing, undo functionality in software, and managing memory in operating systems. Their simplicity and efficiency make them a cornerstone of data structure design and implementation.
+
+** Pseudo Code:
+
+- For Push Operations
+ 
+#+begin_src python :results output 
+  push(){
+    if (point = size -1)
+      print "Stack Overflow"
+    else
+      point++
+      arr[point] = value;
+  }
+
+#+end_src
+
+- For Pop Operations
+ 
+#+begin_src python :results output 
+  pop(){
+      if (point = -1)
+        print "Stack underflow"
+      else
+        print arr[point]
+        point--
+  }
+#+end_src
+
+- For Peek Operations
+ 
+#+begin_src python :results output 
+  peek(){
+      print arr[size-1]
+  }
+#+end_src
+
+- To display the entire stack
+ 
+#+begin_src python :results output 
+  showState(){
+      print "["
+      for (i = 0; i < size; i++)
+        print arr[i]
+      print "]"
+  }
+#+end_src
+
+** Source Code: 
+
+#+begin_src C :results output  :tangle ./l1.c
+  #include <stdio.h>
+
+  void push(int* arr, int val, int size, int* point) {
+      if (*point == size - 1)
+          printf("Stack overflow!");
+
+      else
+          arr[++(*point)] = val;
+  }
+  void pop(int* arr, int size, int* point) {
+      if (*point == -1)
+          printf("Stack underflow!");
+
+      else {
+          printf("%d", arr[(*point)]);
+          arr[(*point)--] = 0;
+      }
+  }
+
+  void peek(int* arr, int size, int* point) {
+      if (*point == -1)
+          printf("Stack underflow!");
+
+      else
+          printf("%d", arr[*point]);
+  }
+
+  void showState(int* point, int* arr, int size) {
+      printf("[");
+      int i, corr=0, n;
+
+      for (i = 0; i < size; i++)
+          printf(" %d", arr[i]);
+
+      printf("]\n");
+      /* printf(" "); */
+
+      for (i = 0; i < (*point)+1; i++) {
+          //count no of digits in arr[point]
+          n = arr[i];
+          corr=0;
+
+          while (n!=0) {
+              n=n/10;
+              corr++;
+          }
+
+          int j;
+
+          printf(" ");
+          /* printf("corr: %d\n", corr); */
+
+          for (j=0; j<corr; j++) {
+              /* printf("%d\n", j); */
+
+              printf(" ");
+          }
+
+      }
+
+      printf("^");
+  }
+
+  int main() {
+      int point = -1;
+      int inp, noexit = 1, val;
+      char exitence;
+      int arr[20];
+
+      while (noexit) {
+
+          printf("Choose a number.\n");
+          printf("1) Push value\n");
+          printf("2) Pop value\n");
+          printf("3) Peek value\n");
+          printf("4) Display Stack\n");
+          printf("> ");
+  
+          /* scanf("%d", &inp); */
+
+          switch (inp) {
+          case 1:
+              scanf("%d", &val);
+              push(arr, val, 10, &point);
+              break;
+
+          case 2:
+              pop(arr, 10, &point);
+              break;
+
+          case 3:
+              peek(arr, 10, &point);
+              break;
+
+          case 4:
+              showState(&point, arr, 10);
+              break;
+          }
+
+          printf("\nDo we exit?(y/n) ");
+          getchar();
+          scanf("%c", &exitence);
+          noexit = exitence == 'y' ? 0 : 1;
+      }
+
+      return 0;
+  }
+#+end_src
+
+#+RESULTS:
+: Choose a number.
+: 1) Push value
+: 2) Pop value
+: 3) Peek value
+: 4) Display Stack
+: > 1
+: 12
+: 
+: Do we exit?(y/n) n
+: Choose a number.
+: 1) Push value
+: 2) Pop value
+: 3) Peek value
+: 4) Display Stack
+: > 1
+: 3
+: 
+: Do we exit?(y/n) 
+: Choose a number.
+: 1) Push value
+: 2) Pop value
+: 3) Peek value
+: 4) Display Stack
+: > 3
+: 3
+: Do we exit?(y/n) n
+: Choose a number.
+: 1) Push value
+: 2) Pop value
+: 3) Peek value
+: 4) Display Stack
+: > 2
+: 3
+: Do we exit?(y/n) n
+: Choose a number.
+: 1) Push value
+: 2) Pop value
+: 3) Peek value
+: 4) Display Stack
+: > 4
+: [ 12 0 0 0 0 0 0 0 0 0]
+:    ^
+: Do we exit?(y/n) y
+: 
+
+** Discussion
+
+The implementation of stack operations in this laboratory experiment focused on creating a functional stack data structure using an array-based approach. The primary operations, namely push, pop, peek, and displaying the stack state, were designed to provide a comprehensive understanding of the underlying principles of a stack.
+
+The push operation appends a new element to the top of the stack. The implementation checks for stack overflow, ensuring that the stack size does not exceed the specified limit. The pop operation, responsible for removing the top element from the stack, incorporates safeguards against stack underflow. If the stack is empty, a corresponding message is displayed.
+
+The peek operation allows the user to view the top element of the stack without removing it. Similar to the pop operation, it addresses stack underflow by providing appropriate feedback if the stack is empty.
+
+The showState function was implemented to visualize the current state of the stack. It prints the entire stack array and includes a pointer (^) indicating the top of the stack. To enhance visual clarity, additional spaces are added to align the pointer correctly with the top element.
+
+A notable feature of this implementation is its interactive nature. The user is prompted to choose an operation from a menu, allowing for dynamic interaction with the stack. The program continues to execute operations until the user chooses to exit.
+
+The main function orchestrates the entire process, utilizing an array to store stack elements and a pointer (point) to keep track of the top of the stack. The user is presented with a menu to choose push, pop, peek, or display operations, and the program dynamically responds to user input.
+
+While the current implementation serves as a basic demonstration of stack operations, future enhancements could involve exploring alternative data structures or introducing additional error handling mechanisms. Additionally, extending the program to handle a dynamically resizable stack or integrating it into a larger system could be avenues for further development.
+
+In summary, the implementation successfully achieves the objectives of creating a functional stack, providing a hands-on exploration of key stack operations and their underlying principles in a simple, interactive setting.
+
+** Homework
+Revise for stack viva.
+

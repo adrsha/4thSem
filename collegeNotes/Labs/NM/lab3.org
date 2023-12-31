@@ -1,0 +1,61 @@
+#+title: Gauss Jordan Method
+
+* THEORY:
+
+* Algorithm:
+1) Create the augmented Matrix
+2) Take each of the diag elements and make the others zero using them.
+3) Make the diags 1
+4) Equate the variables
+* C Code:
+#+begin_src C :results verbatim 
+
+  #include <stdio.h>
+  #define f(x) x *x *x - 4 * x - 9
+  #define e 0.001
+
+  int main() {
+    int i, j, k, n;
+    float a[5][5], r, x[5];
+
+    printf("Enter the no of unknowns.");
+    scanf("%d", &n);
+    printf("\n enter coefficients: ");
+
+    /* inputted */
+    for (i = 1; i < n; i++) {
+      for (j = 1; j < n + 1; j++) {
+        printf("\n a[%d][%d]", i + 1, j + 1);
+        scanf("%f", &a[i][j]);
+      }
+    }
+    // i/j  0  1   2
+    // 0
+    // 1
+    // 2
+
+    int factor = 1;
+    for (j = 1; j <= n; j++) {
+      for (i = 1; i <= n; i++) {
+        if (i != j) {
+          factor = a[i][j] / a[j][j];
+          for (k = 1; k <= n+1; k++) {
+            if (k != j)
+              a[i][k] = a[i][k] - factor * a[j][k];
+          }
+        }
+      }
+    }
+    // find the value of z now
+    x[n] = a[n][n+1] / a[n][n];
+
+    // put in the value of z in:
+    for (i = 1; i < n; i++){
+      a[i][n] = a[i][n] * x[n];
+    }
+
+
+    return 0;
+  }
+    #+end_src
+    

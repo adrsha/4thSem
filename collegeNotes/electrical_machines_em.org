@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       d297aee1-8b67-424f-844e-6633d1990033
+:END:
+#+title: Electrical Machines (EM)
+#+Author:Adarsha Acharya
+
+* Magnetic Circuits and Induction
+8 Marks : 1 Numerical : 1 Theory
+** Class 1
+Overview: Magnet : Natural, Artificial; Magnetic field, Magnetic force, Magnetic field Intensity (H), Coloumb's law, pole strength
+*** Link: [[~/Documents/PDFs/EM1.pdf][  EM Class 1  ]]
+
+** Class 2
+Overview: Magnetic flux, Magnetic flux density, Work law, Assumptions to apply work law on a solonoid, Magnetic Circuits, Magneto motive force, Reluctance
+*** Link: [[~/Documents/PDFs/EM2.pdf][  EM Class 2  ]]
+*** Questions:
+**** DONE Q1:
+How is the Work done by a UNP to move around a circle in a magnetic field non zero?
+- Because the closed loop (circle) it travels through is around a wire carrying current and hence, it's magnetic field is circular too.
+
+** Class 3
+Overview: Series magnetic circuit, magneto motive force, reluctance, Series combination of reluctance, Parallel combination of reluctance, Faraday's laws
+*** Link : [[~/Documents/PDFs/EM3.pdf][  EM Class 3  ]] 
+*** DONE Q1:
+Why is the Parallel combination, the way that it is?
+It's because the side at which the coil is placed also adds some more of the reluctancem hence dividing the mmf further within the same bar.
+
+** Class 4
+ Overview: Self Induced EMF, Self Inductance, Mutually, Induced EMF, Mutual Induction, Dynamically Induced EMF
+*** Link : [[~/Documents/PDFs/EM4.pdf][  EM Class 4  ]] 
+
+** Class 5
+Overview: Numericals, Leakage Flux, Leakage factor, fringing
+*** Link : [[~/Documents/PDFs/EM5.pdf][  EM Class 5  ]] 
+
+
+* TODO INCOMPLETE NOTES (from Fringing to Transformer)
+
+* Transformer
+16 Marks : 1 Numerical : 1 Theory
+** Class 7
+Overview: Basic Construction
+*** Link : [[~/Documents/PDFs/EM7.pdf][  EM Class 7  ]] 
+
+** Class 7
+Overview: Types on basis of Construction: Core type and Shell type, Working Principle, =BLURED=, Voltage/Current transformation Ratio / True Ratio / Turn Ratio (k), Current Transformer, Ideal Transformer
+*** Link : [[~/Documents/PDFs/EM8.pdf][  EM Class 8  ]] 
+
+
+* DC Generator
+12 Marks : 1 Numerical : 1 Theory
+
+* DC Motor
+12 Marks : 1 Numerical : 1 Theory
+
+* Three Phase Induction Machines
+6-12 Marks : 1 Numerical : 1 Theory
+
+* Three Phase Synchronous Machines
+12 Marks : 1 Numerical : 1 Theory
+
+* Fractional Kilowatt Motors
+10-12 Marks : 1 Theory(Barely asked)

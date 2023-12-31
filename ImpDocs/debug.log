@@ -1,0 +1,18 @@
+2023-12-30 03:48:43.861 | DEBUG    | converter:process_cmd_line_args:144 - Got cmd args ('-db', '/tmp/8085-session1')
+2023-12-30 03:48:43.861 | DEBUG    | __main__:<module>:110 - Got commands () and db file /tmp/8085-session1
+2023-12-30 03:48:43.861 | DEBUG    | __main__:process_command:46 - Command received: MVI A 03H
+2023-12-30 03:48:43.861 | DEBUG    | __main__:cmd_preprocessor:71 - Splitted commands: ('MVI', 'A', '03H')
+2023-12-30 03:48:43.861 | DEBUG    | converter:process_comments:64 - Processing comments: Got ('MVI', 'A', '03H')
+2023-12-30 03:48:43.861 | DEBUG    | converter:process_comments:80 - No comments found: ['MVI', 'A', '03H']
+2023-12-30 03:48:43.862 | DEBUG    | converter:is_label:108 - Label check: No labels found when evaluating 'MVI'
+2023-12-30 03:48:43.862 | DEBUG    | converter:process_instruction_args:27 - Processing to hex for 'argument='03H''
+2023-12-30 03:48:43.862 | DEBUG    | __main__:cmd_preprocessor:98 - Command MVI found.
+2023-12-30 03:48:43.862 | DEBUG    | command_model:validate:24 - Validation Complete (True, True)
+2023-12-30 03:48:43.862 | DEBUG    | interpreter:add_command:109 - Added 'MVI A 0x03' Command to the list
+2023-12-30 03:48:43.862 | DEBUG    | interpreter:revaluate_suspension:77 - Re-evaluation unnecessary: Execution isn't suspended
+2023-12-30 03:48:43.862 | DEBUG    | interpreter:execute_next:50 - Pointer at latest command: 'MVI A 0x03', executing..
+2023-12-30 03:48:43.862 | DEBUG    | command_model:eval:53 - Evaluating command: MVI A 0x03
+2023-12-30 03:48:43.862 | DEBUG    | command_model:move_to_immediate:84 - MVI: ('A', '0x03')
+2023-12-30 03:48:43.862 | DEBUG    | command_model:move_to_immediate:89 - MOVED TO IMMEDIATE:self.state.registers[register]='0x03'
+2023-12-30 03:48:43.862 | DEBUG    | interpreter:evaluate_command:130 - Command 'MVI A 0x03' evaluation complete. Got 'label=None'
+2023-12-30 03:48:43.863 | DEBUG    | state_model:get_register_pair_value:73 - Loaded 0x00 from 0x80a2

@@ -1,0 +1,87 @@
+:PROPERTIES:
+:ID:       3eaaf325-f584-48f5-b568-56dd280dafeb
+:END:
+#+title: Numerical Methods (NM)
+#+Author:Adarsha Acharya
+
+* Introduction, Approximation and errors of computation
+_ marks : _ Numericals : _ Theory
+** Resources:
+[[/home/chilly/Documents/collegeNotes/resources/NM-Ch1.pptx][  NM Chapter 1 Powerpoint  ]]
+
+** Class 1
+Overview: Significant Digits/figures, Rules to determine significant digits, 
+*** Link: [[~/Documents/PDFs/NM1.pdf][  NM Class 1  ]]
+
+** Class 2 =Ch1-2=
+Overview: Rounding off, Non linear equation solutions, Bracketing and non-bracketing methods, Bisection method (Bolzano method)
+*** Link:[[~/Documents/PDFs/NM2.pdf][  NM Class 2  ]]
+
+
+* Solutions of Nonlinear Equations
+
+** Class 2 =Ch1-2=
+Overview: Rounding off, Non linear equation solutions, Bracketing and non-bracketing methods, Bisection method (Bolzano method)
+*** Link:[[~/Documents/PDFs/NM2.pdf][  NM Class 2  ]]
+
+** Class 3
+Overview: Calculator shortcuts, False position/ Flasi / Regula Falsi method 
+*** Link: [[~/Documents/PDFs/NM3.pdf][  NM Class 3  ]]
+
+** Class 4 
+Overview: Secant method, Newton Raphson method
+*** Link: [[/home/chilly/Documents/PDFs/NM4.pdf][  NM Class 4  ]] 
+
+** Class 5  =Ch2-3=
+Overview: Fixed Point Iteration Method: Types of divergence, 
+*** Link: [[/home/chilly/Documents/PDFs/NM5.pdf][  NM Class 5  ]] 
+
+
+* Solution of system of llinear algebraic equations
+
+** Class 6 =Ch2-3=
+ Overview: Gauss Elimination Method, Gauss Elimination Method with Pivoting, Partial Pivoting, Complete pivoting
+*** Link: [[/home/chilly/Documents/PDFs/NM6.pdf][  NM Class 6  ]]
+
+* TODO INCOMPLETE NOTES (from Factorization)
+
+
+* Interpolation
+
+* Numerical Differentiation and Integration
+
+* Solution of ordinary differential equations
+
+* Numerical solutions of Partial differential equation
+
+
+* ADTs
+** Resources:
+*** ADT 1
+**** Q1: Discuss the different types of errors in numerical computation.
+There are three different types of errors in numerical computations:
+*1. Absolute Error*
+An Absolute Error is the direct difference between the true value and the measured value. It can be very high or very low depending on the values of both the quantities.
+
+*2. Relative Error*
+A Relative error is the amount of absolute error per unit true value, to remove the scaling issues. The values are within 1.
+
+*3. Percentage Error*
+A Percentage Error is the relative error in scaled to fit within a 100 percentage.
+
+~OOORRR~
+
+*1. Inherent Errors*
+Errors which are already present in the statement of a problem before it's solution. Such errors arise either due to the given data being approximate or due to limitations of mathematical tables, calculators or the digital computers.
+
+These type of errors can be minimized by taking more accurate and highly precise data using high precision computing aids.
+
+*2. Rounding Errors*
+The type of errors that is brought forth due to rounding off digits.
+
+
+**** Q2: Discuss the importance of Numerical Methods in science and engineering.
+Numerical Methods are used to reduce the time of computation of lots of values. Not only that, but they help provide faster alternative methods for approximations of data that don't require exact values. Hence they are excessively used in processes like simulations, prediction algorithms, Machine learning, and so much more. They help reduce the time and cost needed significantly to run these processes. They are also much better tools for handling complex processes like simulating ecosystems or galaxies. Hence their importance is undeniable in the field of science and engineering.
+
+**** Continued..
+[[~/Documents/collegeNotes/resources/am_adt1_prep.pdf][  AM Adt1 prep. Questions  ]]

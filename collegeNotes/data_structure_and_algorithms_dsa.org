@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       585c9a24-0aa9-44d3-8941-55ac487626af
+:END:
+#+title: Data Structure and Algorithms (DSA)
+#+Author:Adarsha Acharya
+
+* Concept of Data structures
+_ marks : _ Numericals : _ Theory
+** Class 1
+Overview: Data Structure, Classification of Data Structure, Abstract Data Type (ADT), Stack: Algorithm 
+*** Link: [[~/Documents/PDFs/DSA1.pdf][  DSA Class 1  ]] =Ch1-2=
+
+* The Stack and the Queue
+_ marks : _ Numericals : _ Theory
+** Class 3
+Overview: Infix to Prefix Expression
+*** Link: [[~/Documents/PDFs/DSA3.pdf][  DSA Class 3  ]] =Ch1-2=
+
+* TODO INCOMPLETE NOTES (From Postfix to Linked Lists)
+
+* List
+_ marks : _ Numericals : _ Theory
+** Class 5
+Overview: Linked List: Types, Basic Operations in Linked Lists
+*** Link: [[~/Documents/PDFs/DSA5.pdf][  DSA Class 5  ]] =Ch1-2=
+
+
+* Linked Lists
+_ marks : _ Numericals : _ Theory
+
+* Recursion
+_ marks : _ Numericals : _ Theory
+
+* Trees
+_ marks : _ Numericals : _ Theory
+
+* Sorting
+_ marks : _ Numericals : _ Theory
+
+* Searching
+_ marks : _ Numericals : _ Theory
+
+* 

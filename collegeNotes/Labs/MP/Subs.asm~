@@ -1,0 +1,13 @@
+LXI B, 3456H
+LXI D, 1297H
+
+MOV A, C
+SUB E
+
+MOV L, A
+
+MOV A, B
+SBB D
+
+MOV H, A
+HLT

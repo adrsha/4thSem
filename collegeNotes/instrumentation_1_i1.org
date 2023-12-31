@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       834dbb79-f7bf-4dae-8a1d-5d52fd69582b
+:END:
+#+title: Instrumentation 1 (I1)
+#+Author:Adarsha Acharya
+
+* Instrumentation Systems =STUDY YOURSELF=
+
+* Theory of measurement
+** Class 1 
+Overview: Errors, Types of Errors: Gross Error, Systematic Error, Intrumental Error, Environmental Error, Random Error, Statistical analysis, Deviation from the mean, Average deviation, Standard Deviation, Variance, Gausian Probability curve.
+*** Link: [[~/Documents/PDFs/I1.pdf][  Inst. Class 1  ]] 
+
+** Class 2 
+*** Link: [[~/Documents/PDFs/I2.pdf][  Inst. Class 2  ]] 
+Overview: Variance, Gausian Probability Curve, Probably Error, Static and Dynamic characteristics of measurement system, Speed of Response, Response time, Measuring lag, Accuracy, Precision/Repeatability
+
+** Class 3
+*** Link: [[~/Documents/PDFs/I3.pdf][  Inst. Class 3  ]] 
+Overview: Resolution, Sensitivity, =BLURED=, Measurement of Resistance: Wheatstone bridge, Balanced Condition for AC bridge, =BLURED(Measurement of Inductance):= Maxwell Bridge, Hay's Bridge, Measurement of Capacitance: Schering's Bridge, Numericals
+
+** Class 4
+*** Link: [[~/Documents/PDFs/I4.pdf][  Inst. Class 4  ]] 
+Overview: Numericals
+
+
+* TODO INCOMPLETE NOTES (From Voltmeter Ammeter method to megger)
+
+
+* Transducer
+
+** Class 7
+*** Link: [[~/Documents/PDFs/I7.pdf][  Inst. Class 7  ]] 
+Overview: Megger, Transducers, Hall Effect, Types of transducers, Factors to consider while choosing transducers, Potentiometer
+
+** Class 8
+*** Link: [[~/Documents/PDFs/I8.pdf][  Inst. Class 8  ]] 
+Overview: Rotational Displacement in POT,  Loading effect in POT, Loading Error, Variation Of Error on change of alpha.
+
+
+* Electrical signal processing and transmission
+
+* Analog - Digital and Digital - Analog conversions
+
+* Digital Instrumentations
+
+* Electrical Equipments

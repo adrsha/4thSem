@@ -1,0 +1,138 @@
+#+title: LAB 2
+
+12. The data in the memory as shown in the table along side. Write a program to increase the 16-bit data at memory location 80A4
+
+    | 80A2 | FF |
+    | 80A3 | A2 |
+    | 80A4 | 00 |
+    | 80A5 | 26 |
+
+#+begin_src asm
+    MOV A, FFH
+    STA 80A2H
+    MOV A, A2H
+    STA 80A3H
+    MOV A, 00H
+    STA 80A4H
+    MOV A, 26H
+    STA 80A5H
+
+    LDA, 80A2H
+    MOV  D, A
+    LDA, 80A3H
+    MOV  E, A
+    INX  D
+    LXI  H, 80A3H
+    MOV  M, E
+    LXI  H, 80A2H
+    MOV  M, D
+    HLT
+#+end_src
+
+13.  WAP to increment of decrement values of a data using DCR and INR for a 16-bit data.
+
+    | 80A2 | FF |
+    | 80A3 | A2 |
+    | 80A4 | 00 |
+    | 80A5 | 26 |
+
+#+begin_src asm
+    MOV A, FFH
+    STA 80A2H
+    MOV A, A2H
+    STA 80A3H
+    MOV A, 00H
+    STA 80A4H
+    MOV A, 26H
+    STA 80A5H
+
+    LDA, 80A2H
+    MOV  D, A
+    LDA, 80A3H
+    MOV  E, A
+    INR  E
+    MOV  A, D
+    ADC  E
+
+    LDA, 80A4H
+    MOV  D, A
+    LDA, 80A5H
+    MOV  E, A
+    DCR  E
+    MOV  A, D
+    SBB  D
+
+    LXI  H, 80A3H
+    MOV  M, E
+    LXI  H, 80A2H
+    MOV  M, D
+    HLT
+#+end_src
+
+14. The table along side shows BCD data. Write a program to add the content at memory locations 818A and 818B. Store the BCD result at memory location 818C
+
+    | 818A | 29 |
+    | 818B | 45 |
+    | 818C |    |
+
+    #+begin_src asm
+        LDA 818AH
+        DAA 
+        MOV L, A
+        LDA 818BH
+        DAA 
+        ADD L
+        STA 818C
+        HLT
+
+                                      ;-------------
+                                      ; More efficient by 2 byte:
+
+        LHLD 818AH
+        MOV A, L
+        DAA
+        MOV A,H
+        DAA
+        ADD L
+        STA 818C
+        HLT
+    #+end_src
+
+15. WAP to add the 16-bit BCD data at memory location 8284 with the 16-bit BCD data at 8286 and store the BCD result at 8288.
+
+    | 8284 | 13 |
+    | 8285 | 79 |
+    | 8286 | 26 |
+    | 8287 | 48 |
+    | 8288 |    |
+    | 8289 |    |
+
+    #+begin_src asm
+        ;; LHLD 8284H
+        ;; XCHG
+        ;; LHLD 8286H
+        LDA 8284H
+        DAA
+        MOV H, A
+        LDA 8285H
+        DAA
+        MOV L, A
+        LDA 8286H
+        DAA
+        MOV D, A
+        LDA 8287H
+        DAA
+        MOV E, A
+        DAD D
+        MOV L, 8289H
+        MOV H, 8288H
+        HLT
+    #+end_src
+
+16. Suppose reg H has 34 and reg D has 12. Write program to subtract BCD value in reg D from the BCD value reg H. Store the BCD result in reg H.
+
+#+begin_src asm
+    MVI H, 34H  
+    MVI D, 12H
+
+#+end_src
